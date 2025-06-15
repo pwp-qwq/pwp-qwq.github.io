@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直链网站</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --primary-color: #4f46e5;
+            --secondary-color: #f3f4f6;
+            --border-color: #e5e7eb;
+            --accent-color: #7c3aed;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #f3f4f6;
+                --primary-color: #6366f1;
+                --secondary-color: #2d2d2d;
+                --border-color: #444444;
+                --accent-color: #8b5cf6;
+            }
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #f0f0f0 100%);
+            color: var(--text-color);
+            line-height: 1.5;
+            transition: all 0.3s ease;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(135deg, var(--bg-color) 0%, #121212 100%);
+            }
+        }
+        
+        header {
+            margin-bottom: 2.5rem;
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #2563eb, #7c3aed, #d946ef, #f43f5e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            background-size: 300% 300%;
+            animation: gradient 5s ease infinite;
+            letter-spacing: -0.5px;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .link-container {
+            background-color: var(--secondary-color);
+            border-radius: 0.8rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .link-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .link-title {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            color: var(--text-color);
+        }
+        
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-all;
+            padding: 0.5rem;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+            color: var(--accent-color);
+        }
+        
+        .link-icon {
+            flex-shrink: 0;
+        }
+        
+        .notice {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 1.5rem;
+            line-height: 1.6;
+            max-width: 80%;
+        }
+        
+        .contact-email {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .email-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 0.5rem;
+            transition: all 0.2s ease;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+            transform: translateY(-1px);
+        }
+        
+        /* 波纹点击效果 */
+        .ripple {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ripple:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            background-image: radial-gradient(circle, var(--primary-color) 10%, transparent 10.01%);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            transform: scale(10, 10);
+            opacity: 0;
+            transition: transform .5s, opacity 1s;
+        }
+        
+        .ripple:active:after {
+            transform: scale(0, 0);
+            opacity: 0.2;
+            transition: 0s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>私人直链</h1>
+    </header>
+    
+    <div class="link-container ripple">
+        <div class="link-title">示例文件链接</div>
+        <a href="https://pwp-qwq.github.io/hello.txt" class="link" target="_blank">
+            <svg class="link-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+            </svg>
+            https://pwp-qwq.github.io/hello.txt
+        </a>
+    </div>
+    
+    <p class="notice">
+        此网站为私人使用，不提供文件上传服务。<br>
+        所有链接均为个人收藏的直接访问链接。
+        
+        <br><br>
+        此网站并不会表明所有文件链接。如果需要寻找文件或不知道需要的文件是哪个链接，请前往
+        <a href="https://github.com/pwp-qwq/pwp-qwq.github.io/" class="github-link" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            GitHub仓库
+        </a>
+        自行寻找。
+    </p>
+    
+    <div class="contact-email">
+        联系邮箱: <a href="mailto:167963232@qq.com" class="email-link">167963232@qq.com</a>
+    </div>
+    
+    <script>
+        // 添加波纹效果
+        document.querySelectorAll('.ripple').forEach(container => {
+            container.addEventListener('click', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                this.style.setProperty('--x', x + 'px');
+                this.style.setProperty('--y', y + 'px');
+                
+                this.classList.remove('active');
+                void this.offsetWidth;
+                this.classList.add('active');
+            });
+        });
+        
+        // 检测系统颜色模式变化
+        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        darkModeMediaQuery.addListener((e) => {
+            const isDark = e.matches;
+            document.documentElement.style.setProperty('color-scheme', isDark ? 'dark' : 'light');
+        });
+        
+        // 初始设置
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.style.setProperty('color-scheme', 'dark');
+        } else {
+            document.documentElement.style.setProperty('color-scheme', 'light');
+        }
+    </script>
+</body>
+</html>
