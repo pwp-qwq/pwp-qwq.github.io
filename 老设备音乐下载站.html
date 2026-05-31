@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- 使用 Unicode 实体确保 Win9x/PSP/WP 等全平台中文不乱码 -->
+    <title>Prism&#x5728;&#x7ebf; - &#x97f3;&#x4e50;&#x641c;&#x7d22;</title>
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+            font-size: 14px;
+            margin: 5px;
+            font-family: "Microsoft YaHei", "SimSun", "Arial", sans-serif;
+        }
+        .header {
+            background-color: #005599;
+            color: #FFFFFF;
+            padding: 8px;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 2px solid #003366;
+        }
+        .search-box {
+            background-color: #EFEFEF;
+            padding: 10px;
+            border-bottom: 1px solid #CCCCCC;
+            text-align: center;
+        }
+        .input-text {
+            width: 80%;
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+        .btn {
+            padding: 2px 10px;
+        }
+        .list-item {
+            padding: 10px 5px;
+            border-bottom: 1px dotted #999999;
+            background-color: #FFFFFF;
+        }
+        .song-title {
+            color: #0000EE;
+            font-weight: bold;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 3px;
+        }
+        .singer-name {
+            color: #666666;
+            font-size: 12px;
+        }
+        .action-links {
+            margin-top: 5px;
+            font-size: 13px;
+        }
+        .action-links a {
+            color: #008000;
+            text-decoration: underline;
+            margin-right: 10px;
+        }
+        .pagenav {
+            padding: 15px 5px;
+            text-align: center;
+            background-color: #F9F9F9;
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 11px;
+            color: #999999;
+            text-align: center;
+            border-top: 1px solid #EEEEEE;
+            padding: 10px;
+        }
+        .loading { color: #008800; padding: 20px; text-align: center; }
+        .error { color: #FF0000; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <!-- 静态中文已转义为 Unicode 实体 -->
+    <div class="header">Prism &#x97f3;&#x4e50;&#x641c;&#x7d22;&#x7ad9;</div>
+
+    <div class="search-box">
+        <form onsubmit="doSearch(1); return false;">
+            <input type="text" id="keyword" class="input-text" value="" />
+            <br />
+            <input type="submit" value=" &#x7acb;&#x5373;&#x641c;&#x7d22; " class="btn" />
+        </form>
+    </div>
+
+    <div id="content">
+        <div style="padding:20px; color:#666; text-align:center;">
+            &#x6b22;&#x8fce;&#x4f7f;&#x7528; Prism &#x5728;&#x7ebf;&#x97f3;&#x4e50;<br />
+            &#x9488;&#x5bf9;&#x65e7;&#x7248;&#x8bbe;&#x5907;&#x5168;&#x5e73;&#x53f0;&#x4f18;&#x5316;
+        </div>
+    </div>
+
+    <div class="footer">
+        2025 antipa.cn<br />
+        性能模式
+    </div>
+
+    <script type="text/javascript">
+        var currentPage = 1;
+
+        function toHttp(url) {
+            if (!url) return "";
+            return url.replace("https://", "http://");
+        }
+
+        function doSearch(page) {
+            var kw = document.getElementById('keyword').value;
+            var container = document.getElementById('content');
+            
+            if (!kw) {
+                alert("\u8bf7\u8f93\u5165\u5173\u952e\u8bcd"); // "请输入关键词" 的 JS 转义
+                return;
+            }
+
+            currentPage = page;
+            container.innerHTML = '<div class="loading">\u6b63\u5728\u67e5\u8be2\u4e2d...</div>'; // "正在查询中"
+
+            var searchUrl = "http://kuwo.bfmzdx.cn/kuwo/search/searchMusicBykeyWord?key=" + encodeURIComponent(kw) + "&pn=" + page + "&rn=5";
+
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        try {
+                            // 使用 eval 解析以兼容 IE5/PSP
+                            var res = eval('(' + xhr.responseText + ')');
+                            renderList(res.data);
+                        } catch (e) {
+                            container.innerHTML = '<div class="error">\u63a5\u53e3\u6570\u636e\u89e3\u6790\u5931\u8d25</div>';
+                        }
+                    } else {
+                        container.innerHTML = '<div class="error">\u7f51\u7edc\u8bf7\u6c42\u5931\u8d25</div>';
+                    }
+                }
+            };
+            xhr.open("GET", searchUrl, true);
+            xhr.send();
+        }
+
+        function renderList(data) {
+            var container = document.getElementById('content');
+            if (!data || !data.list || data.list.length == 0) {
+                container.innerHTML = '<div class="error">\u672a\u627e\u5230\u76f8\u5173\u6b4c\u66f2</div>';
+                return;
+            }
+
+            var html = '';
+            var list = data.list;
+            for (var i = 0; i < list.length; i++) {
+                var item = list[i];
+                var rid = item.rid;
+                
+                html += '<div class="list-item">';
+                html += '  <span class="song-title">' + item.name + '</span>';
+                html += '  <span class="singer-name">\u6b4c\u624b: ' + item.artist + '</span>'; // "歌手:"
+                html += '  <div class="action-links">';
+                html += '    <a href="javascript:getAndPlay(\'' + rid + '\', false)">[\u641d\u653e]</a>'; // "播放"
+                html += '    <a href="javascript:getAndPlay(\'' + rid + '\', true)">[\u8bd5\u542c]</a>'; // "试听"
+                if (item.pic) {
+                    html += '    <a href="' + toHttp(item.pic) + '" target="_blank">[\u5c01\u9762]</a>'; // "封面"
+                }
+                html += '  </div>';
+                html += '</div>';
+            }
+
+            html += '<div class="pagenav">';
+            if (currentPage > 1) {
+                html += '<a href="javascript:doSearch(' + (currentPage - 1) + ')">[\u4e0a\u9875]</a> &nbsp; ';
+            }
+            html += '<span>\u7b2c ' + currentPage + ' \u9875</span>'; // "第 X 页"
+            html += ' &nbsp; <a href="javascript:doSearch(' + (currentPage + 1) + ')">[\u4e0b\u9875]</a>';
+            html += '</div>';
+
+            container.innerHTML = html;
+        }
+
+        function getAndPlay(rid, isRealPlayer) {
+            var urlApi = "http://kuwo.bfmzdx.cn/kuwo/url?mid=" + rid + "&type=music&br=128kmp3";
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+            
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    try {
+                        var json = eval('(' + xhr.responseText + ')');
+                        var realUrl = toHttp(json.data.url);
+                        if (isRealPlayer) {
+                            openReal(realUrl);
+                        } else {
+                            window.location.href = realUrl;
+                        }
+                    } catch(e) { alert("\u83b7\u53d6\u5730\u5740\u5931\u8d25"); }
+                }
+            };
+            xhr.open("GET", urlApi, true);
+            xhr.send();
+        }
+
+        function openReal(url) {
+            var win = window.open('', 'Player', 'width=300,height=200');
+            win.document.write('<html><body><embed src="' + url + '" width="280" height="180" autostart="true"></embed></body></html>');
+            win.document.close();
+        }
+    </script>
+</body>
+</html>
