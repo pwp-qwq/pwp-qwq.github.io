@@ -1,43 +1,65 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
-
+name: Generate Static File Index
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    branches: [ main ]   # 如果你的默认分支是 master，请改过来
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
+      - name: Generate index.html (HTML 2.0 compatible)
+        run: |
+          python3 -c "
+import os
+import html
+from urllib.parse import quote
+from pathlib import Path
+
+# 纯 HTML 2.0 头部，无任何样式或脚本
+html_content = '''<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+<TITLE>File Index</TITLE>
+</head>
+<body>
+<H1>File List</H1>
+<HR>
+<UL>
+'''
+
+# 递归收集所有文件
+for p in sorted(Path('.').rglob('*')):
+    if p.is_file():
+        # 排除 .git 目录和生成的 index.html 自身
+        if '.git' in str(p) or p.name == 'index.html':
+            continue
+        # 转换为 Unix 风格的相对路径
+        rel_path = str(p).replace('\\', '/')
+        # 转义显示文本（防止 & < > 破坏 HTML）
+        display = html.escape(rel_path)
+        # URL 编码（处理空格、中文等）
+        encoded = quote(rel_path)
+        # 仅生成一个直链，无任何强制下载属性
+        html_content += f'  <LI><A HREF=\"{encoded}\">{display}</A>\n'
+
+html_content += '''</UL>
+<HR>
+</body>
+</html>
+'''
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: '.'
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
