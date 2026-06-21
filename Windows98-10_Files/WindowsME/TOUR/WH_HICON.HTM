@@ -1,0 +1,163 @@
+<HTML>
+<HEAD>
+<!--
+Copyright (c) 1999 Microsoft Corporation
+-->
+<TITLE>Windows Millennium Edition 教程</TITLE>
+<META NAME="KEYWORDS" CONTENT="教程; 游历; Windows Millennium Edition 教程;游历 Windows Millennium Edition;:">
+<META NAME="DESCRIPTION" CONTENT="学习 Windows Millennium Edition 简明教程">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+
+<LINK ID="STYLESHEET_REF1" HREF="css/tour.css" REL="stylesheet" TYPE="TEXT/CSS">
+<LINK ID="STYLESHEET_REF1" HREF="css/nav.css" REL="stylesheet" TYPE="TEXT/CSS">
+
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+
+function document_onkeypress() {
+top.HandleKeys(window.event.keyCode,window.event.shiftKey,window.event.altKey,window.event.ctrlKey)
+
+}
+
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=javascript FOR=document EVENT=onkeypress>
+<!--
+ document_onkeypress()
+//-->
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE="JavaScript" SRC="css/nav.js">
+</SCRIPT>
+
+<SCRIPT LANGUAGE = "javascript">
+function winclose()
+{
+	parent.parent.close();	
+}
+
+
+function whatnew()
+{  
+   var frm = parent.parent.frames;
+   frm.menu.location ="wh_menu.htm";   
+   frm.content.location="wh_infra.htm"      
+}   
+
+function getwork_done()
+{
+   var frm = parent.parent.frames;      
+   frm.menu.location ="ge_menu.htm";
+   frm.content.location="ge_infra.htm";    
+  
+}   
+
+
+
+function entermulti()
+{ 
+   var frm = parent.parent.frames;
+   frm.menu.location ="en_menu.htm";
+   frm.content.location="en_infra.htm"; 
+}   
+
+function internet_network()
+{
+   var frm = parent.parent.frames;
+   frm.menu.location ="in_menu.htm";
+   frm.content.location="in_infra.htm"; 
+   
+}   
+
+function wh_selnvhic()
+{
+  document.all.WHHI1.className="wh-nitem";
+}
+
+function itemfocus(){
+	if(parent.parent.toplogo.document.readyState == 'complete' && parent.parent.menu.document.readyState == 'complete' && parent.cont.document.readyState == 'complete'){
+		parent.parent.menu.document.all.WHMN3.focus();
+	}else{
+		setTimeout('itemfocus()',0);
+	}
+}
+
+
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY CLASS="navmargin" onLoad="wh_selnvhic();itemfocus();" TABINDEX="-1">
+
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" ALIGN="left" VALIGN="top" CLASS="navmargin" WIDTH="100%" HEIGHT="40">
+<TR>      	
+	<TD HEIGHT="100%" COLSPAN="0">
+	<IMG ALT="Rule" BORDER="0" HEIGHT="100%" WIDTH="1">	
+	</TD>
+	
+	<TD ID="WHHI1" CLASS="navitem" WIDTH="25%" VALIGN="middle" ALIGN="center" COLSPAN="1" HEIGHT="40" onClick="whatnew();" onkeypress="if(event.keyCode==13) whatnew();" TABINDEX="1">
+			新增<BR>功能(<U>W</U>)</TD>
+	
+	<TD HEIGHT="100%" COLSPAN="0">
+	<IMG ALT="Rule" BORDER="0" HEIGHT="100%" WIDTH="1">	
+	</TD>
+	
+	
+	<TD ID="WHHI2" CLASS="navitem" WIDTH="25%" VALIGN="middle" ALIGN="center" COLSPAN="1" HEIGHT="40" onClick="getwork_done();" onkeypress="if(event.keyCode==13) getwork_done();" TABINDEX="4">
+			开始<BR>工作(<U>G</U>)</TD>	
+	
+	<TD HEIGHT="100%" COLSPAN="0">
+	<IMG ALT="Rule" BORDER="0" HEIGHT="100%" WIDTH="1">	
+	</TD>
+		
+	<TD ID="WHHI3" CLASS="navitem" WIDTH="25%" VALIGN="middle" ALIGN="center" COLSPAN="1" HEIGHT="40" onClick="entermulti();" onkeypress="if(event.keyCode==13) entermulti();" TABINDEX="5">
+				娱乐<BR>与多媒体(<U>E</U>)</TD>
+	
+	<TD HEIGHT="100%" COLSPAN="0">
+	<IMG ALT="Rule" BORDER="0" HEIGHT="100%" WIDTH="1">	
+	</TD>
+	
+	
+	<TD ID="WHHI4" CLASS="navitem" WIDTH="25%" VALIGN="middle" ALIGN="center" COLSPAN="1" HEIGHT="40" onClick="internet_network();" onkeypress="if(event.keyCode==13) internet_network();" TABINDEX="6">
+				家庭<BR>网络(<U>H</U>)</TD>		
+				
+</TR>
+
+</TABLE>	
+
+<BR CLEAR="all">
+
+<TABLE>
+<TR>
+	<TD WIDTH="50%" VALIGN="BOTTOM" HEIGHT="15px">         
+	</TD>  
+</TR>
+
+<TR>
+<TD WIDTH="100%" ALIGN="left" TABINDEX="-1">
+<DIV CLASS="wh-maintitle">新增功能<BR></DIV>
+<DIV CLASS="wh-subtitle">利用“休眠”和“待机”模式安全地暂停</DIV>
+</TD>
+</TR>
+</TABLE>
+
+<IFRAME SRC="wh_hiber.htm" FRAMEBORDER="0" STYLE="width:100%;height:expression(offsetParent.offsetHeight - this.offsetTop - 2)" TABINDEX="3"> </IFRAME>
+
+</BODY>
+
+</HTML>
+
+ 
+
+
+
+
+
+
+ 
+
+

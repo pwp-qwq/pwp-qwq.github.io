@@ -1,0 +1,302 @@
+<HTML>
+<HEAD>	
+<!--
+Copyright (c) 2000 Microsoft Corporation
+-->
+<TITLE>“Internet 与网络”菜单</TITLE>
+<META NAME="KEYWORDS" CONTENT="教程; 游历; Windows Millennium Edition 教程;游历 Windows Millennium Edition;:">
+<META NAME="DESCRIPTION" CONTENT="学习 Windows Millennium Edition 简明教程">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+<LINK HREF="css/tour.css" REL="stylesheet" TYPE="text/css"> 
+
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+
+function document_onkeypress() {
+top.HandleKeys(window.event.keyCode,window.event.shiftKey,window.event.altKey,window.event.ctrlKey)
+
+}
+
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=javascript FOR=document EVENT=onkeypress>
+<!--
+ document_onkeypress()
+//-->
+</SCRIPT>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function inintro(){
+
+var frm = parent.frames
+frm.content.location="in_infra.htm";
+fnfocus(1);
+
+}
+
+function whneed(){
+
+var frm = parent.frames
+frm.content.location="in_wyfra.htm";
+fnfocus(2);
+
+}
+
+function whpro(){
+
+var frm = parent.frames
+frm.content.location="in_wwfra.htm";
+fnfocus(3);
+
+}
+
+function sharfold(){
+
+var frm = parent.frames
+frm.content.location="in_sifra.htm";
+fnfocus(4);
+
+}
+
+function sharprint(){
+
+var frm = parent.frames
+frm.content.location="in_spfra.htm";
+fnfocus(5);
+
+}
+
+function sharint(){
+
+var frm = parent.frames
+frm.content.location="in_scfra.htm";
+fnfocus(6);
+
+}
+
+function fnkey(i)
+{
+	switch(i)
+	{
+		case 1:
+				if(event.keyCode==13)
+				{
+					inintro();					
+					break;
+				}
+						
+		case 2:
+				if(event.keyCode==13)
+				{
+					whneed();					
+					break;
+				}
+				
+		case 3:
+				if(event.keyCode==13)
+				{
+					whpro();					
+					break;
+				}
+				
+		case 4:
+				if(event.keyCode==13)
+				{
+					sharfold();					
+					break;
+				}
+				
+		case 5:			
+				if(event.keyCode==13)
+				{
+					sharprint();					
+					break;
+				}		
+				
+		case 6:			
+				if(event.keyCode==13)
+				{
+					sharint();					
+					break;
+				}								
+	 					
+	}			
+	
+}	
+
+function fnfocus(i)
+{
+	document.all.INMN1.className="unsel";	
+	document.all.INMN2.className="unsel";
+	document.all.INMN3.className="unsel";
+	document.all.INMN4.className="unsel";
+	document.all.INMN5.className="unsel";	
+	document.all.INMN6.className="unsel";
+	
+	switch(i)
+	{
+	case 1:
+		document.all.INMN1.className="insel";
+		break;
+		
+	case 2:
+		document.all.INMN2.className="insel";
+		break;
+		
+	case 3:
+		document.all.INMN3.className="insel";
+		break;
+	
+	case 4:
+		document.all.INMN4.className="insel";
+		break;	
+	
+	case 5:
+		document.all.INMN5.className="insel";
+		break;			
+		
+	case 6:
+		document.all.INMN6.className="insel";
+		break;				
+			
+	}
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY onLoad="fnfocus(3)" CLASS="in-MenuBackground" TABINDEX="-1">
+<TABLE CELLPADDING="1" CELLSPACING="0" BORDER="0" WIDTH="100%" CLASS="indent">
+
+<TR>
+	<TD WIDTH="50%" VALIGN="BOTTOM" HEIGHT="62px">         
+	</TD>  
+</TR>
+
+
+<TR ID="tocM_1">
+<TD ID="INMN1" WIDTH="100%" HEIGHT="25px" onClick="inintro();" onfocus="fnfocus(1)" TABINDEX="5" onkeypress="fnkey(1)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+说明</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_2">
+<TD ID="INMN2" WIDTH="100%" HEIGHT="25px"  onclick="whneed();" onfocus="fnfocus(2)" TABINDEX="6" onkeypress="fnkey(2)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+所需条件</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+<TR ID="tocM_3">
+<TD ID="INMN3" WIDTH="100%" HEIGHT="25px" onclick="whpro();" onfocus="fnfocus(3)" TABINDEX="1" onkeypress="fnkey(3)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+Windows ME<BR>提供的内容</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+<TR ID="tocM_4">
+<TD ID="INMN4" WIDTH="100%" HEIGHT="25px" onclick="sharfold();" onfocus="fnfocus(4)" TABINDEX="2" onkeypress="fnkey(4)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+共享文件<BR>与文件夹</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_5">
+<TD ID="INMN5" WIDTH="100%" HEIGHT="25px" onclick="sharprint();" onfocus="fnfocus(5)" TABINDEX="3" onkeypress="fnkey(5)" class="tblcellwrap"> 
+<DIV CLASS="tocM">
+ 共享打印</DIV>
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_6">
+<TD ID="INMN6" WIDTH="100%" HEIGHT="25px" onclick="sharint();" onfocus="fnfocus(6)" TABINDEX="4" onkeypress="fnkey(6)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+共享<BR>Internet<BR>连接</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+</TABLE>
+
+</BODY>
+</HTML>

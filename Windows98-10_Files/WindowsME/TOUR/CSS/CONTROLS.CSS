@@ -1,0 +1,351 @@
+
+
+.clsTopTray /* Class for tour topic title container (top tray), title is displayed in the idTopTrayText container */
+	{
+		position:absolute;
+		text-align: left;
+		top:0;
+		left:0;
+		width:630;
+		height:70;
+		margin:0;
+		padding:0;
+	}
+
+.clsTopTrayText /* Class for tour topic title text container */
+	{
+		position:absolute;
+		font-size: 32;
+		font-weight: bold;
+		color:#000066;
+		top:15;
+		left:122;
+		width:500;
+		height:32;
+		background-color:;
+		margin:0;
+		padding:0;
+	}
+
+.clsTextAreaTray
+	{
+		position:absolute;
+		background-repeat: no-repeat;
+		background-position:bottom right; /* LOCALIZATION, for BIDI adjust to "background-position:bottom left" setting to position the watermark to the bottom left corner of text display area */
+		top:70;
+		left:109;
+		width:490;
+		height:341;
+		background-color:white;
+		margin:0;
+		padding:16;
+		padding-top: 16;
+		z-index: 10;
+		overflow:auto;
+		cursor:default;
+	}
+
+.clsTextAreaTitle
+	{
+		font-size: 14;
+		font-weight: bold;
+		color: #000066;
+	}
+
+.clsTopicButtonsTray /* Class for topic buttons container (tray) */
+	{
+		position:absolute;
+		font-family:ËÎÌå, tahoma;
+		font-size: 12;		/* LOCALIZATION, adjust font size for scene buttons caption */
+		font-weight: bold;
+		top:74;
+		left: 0;
+		width:101;
+		height:340;
+		margin:0;
+		padding:0;
+		z-index: 8;
+	}
+
+.clsImgControls /* Class for image controls like audio on/off, tour play/pause */
+	{
+		position:absolute;
+		top: 5;
+		left: 0;
+		margin:0;
+		padding:0;
+		cursor:hand;
+	}
+
+.clsImgShowMeHow /* Class for image SHowMeHow image */
+	{
+		position:absolute;
+		top: 0;
+		left: 0;
+		margin:0;
+		padding:0;
+		cursor:hand;
+	}
+
+.clsTopicButtonImg /* Class for container image buttons like Welcome, etc... */
+	{
+		position:absolute;
+		left:0;
+		top:0;
+		margin:0;
+		padding:0;
+		cursor:hand;
+		z-index:30;
+	}
+	
+.clsTopicButtonCaption /* Class for container topic button caption */
+	{
+		position:absolute;
+		text-align: right;	/* LOCALIZATION, adjust text alignment for scene buttons caption */
+		left: 0;			/* LOCALIZATION, adjust left alignment when changing text alignment for this class, similar settings have to be applied to "clsTopicButtonCaptionMouseOver" and "clsTopicButtonCaptionClicked" classes  */
+		top:-2;
+		color: black;
+		width:96;
+		height:30;
+		margin:0;
+		margin-top: 6;		/* LOCALIZATION, adjust top alignment buttons caption */
+		padding:3;
+		cursor:hand;
+		z-index:40;
+	}
+
+.clsTopicButtonCaptionMouseOver /* Class for topic button caption container mouseover event */
+	{
+		position:absolute;
+		text-align: right;	/* LOCALIZATION, adjust text alignment for scene buttons caption */
+		left: 0;			/* LOCALIZATION, adjust left alignment when changing text alignment for this class */
+		top:-2;
+		color: black;
+		width:96;
+		height:30;
+		margin:0;
+		margin-top: 6;		/* LOCALIZATION, adjust top alignment buttons caption */
+		padding:3;
+		cursor:hand;
+		z-index:40;
+	}
+
+.clsTopicButtonCaptionClicked /* Class for topic button caption container mouseover event */
+	{
+		position:absolute;
+		text-align: right;	/* LOCALIZATION, adjust text alignment for scene buttons caption */
+		left: 0;			/* LOCALIZATION, adjust left alignment when changing text alignment for this class */
+		top:-2;	
+		color: yellow;
+		width:96;
+		height:30;
+		margin:0;
+		margin-top: 6;		/* LOCALIZATION, adjust top alignment buttons caption */
+		padding:3;
+		cursor:hand;
+		z-index:40;
+	}
+	
+.clsTopicButton /* Class for topic button container */
+	{
+		position:absolute;
+		text-align:center;
+		left:5;
+		margin:0;
+		padding:0;
+		cursor:hand;
+		z-index:40;
+	}
+
+.clsTextControls /* Class for topics text containers */
+	{
+		position:absolute;
+		text-align:left;
+		font-size: 12;
+		font-weight: bold;
+		top:6;
+		left:20;
+		width:90%;
+		margin:0;
+		padding:1;
+		cursor:hand;
+		z-index:20;
+	}
+.clsTextControlsShowMeHow /* Class for topics text containers */
+	{
+		position:absolute;
+		text-align:left;
+		font-size: 10;
+		font-weight: bold;
+		top:7;
+		left:40;
+		width:90%;
+		margin:0;
+		padding:1;
+		cursor:hand;
+		border-width: 0;
+		border-style: solid;
+		z-index:20;
+	}
+.clsBottomTray /* Class for bottom container (tray) */
+	{
+		position:absolute;
+		font-family:ËÎÌå£¬ tahoma;
+		top:413;
+		left:0;
+		width:600;
+		height:21;
+		margin:0;
+		padding:0;
+		z-index:100;
+	}
+
+.clsShowMeHow
+	{
+		position:absolute;
+		top:0;
+		left:0;
+		width:200;
+		height:32;
+		border-style:solid;
+		border-width:0;
+		margin:0;
+		padding:2;
+		background-color:;
+	}
+
+.clsAudioPlay /* Class for audio controls, (contains images like audio on/off)  */
+	{
+		position:absolute;
+		top:0;
+		left:233;
+		width:138;
+		height:32;
+		border-style:solid;
+		border-width:0;
+		margin:0;
+		padding:2;
+		background-color:;
+	}
+
+.clsTourPlay /* Class for tour controls container */
+	{
+		position:absolute;
+		top:0;
+		left:373;
+		width:138;
+		height:32;
+		border-style:solid;
+		border-width:0;
+		margin:0;
+		padding:2;
+		background-color:;
+	}
+
+.clsTourExit /* Class for tour exit container */
+	{
+		position:absolute;
+		top:0;
+		left:513;
+		width:108;
+		height:32;
+		border-style:solid;
+		border-width:0;
+		margin:0;
+		padding:2;
+		background-color:;
+	}
+
+.clsBackToTour /* Class for back to tour button */
+	{
+		position:absolute;
+		cursor: hand;
+		font-size: 10;
+		text-align:center;
+		font-weight:bold;
+		top:0;
+		left:0;
+		background-color:yellow;
+		width:120;
+		height:18;
+		color:blue;
+		margin:0;
+		padding:2;
+		z-index:100;
+	}
+
+.clsShowMeHowTray
+	{
+		position:absolute;
+		visibility: hidden;
+		font-size: 12;
+		top: 0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color: black;
+		margin:0;
+		padding:0;
+		z-index: 100;
+	}
+	
+.clsBodyTray
+	{
+		position:absolute;
+		width: 624;
+		height: 445;
+		top: 0;
+		left: 0;
+		border-width: 2;
+		border-style:solid;
+		border-color: white;
+		background-color: red;
+		margin:0;
+		padding:0;
+		z-index:100;
+	}
+
+.clsShowMeHowTrayText /* Class for tour topic title text container */
+	{
+		position:absolute;
+		font-size: 32;
+		font-weight: bold;
+		color:#336699;
+		height: 20;
+		top:0;
+		left:80;
+		margin:0;
+		padding:0;
+		z-index:100;
+	}
+
+.clsWMLogoImg /* Class for container image buttons like Welcome, etc... */
+	{
+		position:absolute;
+		left:20;
+		top:9;
+		margin:0;
+		padding:0;
+	}
+
+.clsBackGroundImg
+	{
+		position:absolute;
+		left:0;
+		top:0;
+		margin:0;
+		padding:0;
+		z-index:-10;
+	}
+
+
+.clsTimeElapsed /* Class for Time Elapsed/Remaining display */
+	{
+		position:absolute;
+		top:20; 
+		left:530; 
+		font-size:18;
+		font-weight:
+		bold; z-index:1000;
+		cursor:default;
+	}

@@ -1,0 +1,82 @@
+A:link
+{
+	text-align: left;
+   	font-family:宋体, Tahoma; 
+	font-weight: bold; 
+   	color: #336699; 
+	text-decoration: none;
+}
+
+A:visited
+{
+	color: #4169e1;
+	font-weight: bold; 
+	text-decoration: none;
+}
+
+A:active
+{
+	font-family:宋体， tahoma;
+	font-weight: bold;
+	color: #708090;
+	text-decoration: none;
+}
+
+A:hover
+{
+	color: red;
+	text-decoration: none;
+}
+
+BODY
+{
+	font-family:宋体， tahoma;
+	border-width:0;
+	border-style: solid;
+	border-color: gray;
+	font-size: 12;
+	color: black;
+	background-color:black;
+	visibility:hidden;
+	margin: 0;
+}
+
+
+.copyright
+{
+	position:absolute;
+	top:325;
+	left:0;
+	width:100%;
+	padding: 0;
+	text-align: center;
+	font-family:宋体, arial;
+	font-weight: bold;
+	font-size: 9pt;
+	color: #949494;
+	background-color: white;
+}
+
+UL
+{
+	margin-left: 16;
+	margin-right: 16;
+	margin-top: 4;
+	margin-bottom: 10;
+}
+
+LI
+{
+	padding:2;
+}
+
+P
+{
+	margin-top:8;
+	margin-bottom:8;
+	margin-left:0;
+	margin-right:0;
+}
+
+
+	

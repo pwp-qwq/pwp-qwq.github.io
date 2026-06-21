@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<TITLE>欢迎进入 Windows Update 站点!</TITLE>
+
+<STYLE TYPE="text/css">
+<!--
+    .normal         {font: 9pt 宋体}
+    BODY            {font: 9pt 宋体}
+    .header         {font: 12pt 宋体; font-weight: bold}
+    .subheader      {font: 10.5pt 宋体;color: #3333FF;font-weight: bold}
+    LI              {font: 9pt 宋体}
+    B               {font: 10.5pt 宋体;   font-weight: bold}
+    A               {font: 10.5pt 宋体 ;font-weight: bold; text-decoration: none}
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JScript">
+<!--
+    ua=navigator.userAgent;
+    v=navigator.appVersion.substring(0,1);
+    if ((ua.lastIndexOf("MSIE")!=-1) && (v='4')) {
+        document.onmouseover = highlight;
+        document.onmouseout = unhighlight;
+    }
+
+
+    function highlight() {
+        src = event.toElement;
+        if (src.tagName == "A") {
+            src.oldcol = src.style.color;
+            src.style.color = "#FF0000";
+        }
+    }
+
+    function unhighlight() {
+        src=event.fromElement;
+        if (src.tagName == "A") {
+            src.style.color = src.oldcol;
+        }
+    }
+
+//-->
+
+</script>
+
+<SCRIPT LANGUAGE="VBScript">
+<!--
+
+Sub GoWU
+   Self.location = WUpdInfo.GetWinUpdURL
+End Sub
+
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TOPMARGIN=0 LEFTMARGIN=0>
+<TABLE WIDTH=603 CELLSPACING=0 CELLPADDING=0 BORDER=0>
+<TR><TD COLSPAN=2 HEIGHT=40><IMG SRC="wulogo.gif" ALT="Windows Update" HEIGHT=40 WIDTH=603 BORDER=0 HSPACE=0 VSPACE=0></TD></TR>
+<TR><TD WIDTH=25 BGCOLOR="#000066">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+<TD>
+<DIV STYLE="margin-left: 18px; margin-top: 18px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD COLSPAN=2>
+<B CLASS="header">非常感谢您对“Windows Update”站点的关注。</B>
+<BR><BR>
+</TD>
+</TR>
+<TR>
+<TD>
+
+</TD>
+<TD>
+<BR>
+<B CLASS="subheader">试用 Windows<SUP>&reg;</SUP> Update 站点 - Windows 的 Web 扩展。使用“Windows Update”Web 站点可以 . . .  </B></FONT>
+<FONT FACE="宋体">
+<UL>
+<LI>请及时升级，以确保所使用的操作系统为最新版本。
+<LI>自动更新使用简便。
+<LI>随时查找您对 Windows 问题的答案。
+</UL>
+</FONT>
+</TD>
+</TR>
+<TR>
+<TD COLSPAN=2>
+<br clear=all>
+<FONT FACE="宋体">
+<B>要更好地利用“Windows Update”站点，您只需要使用 Internet Explorer 并与 Internet 连接。 </B>
+<p>
+<A HREF="javascript:goWU()"><IMG SRC="wuicon1.gif" HEIGHT=20 WIDTH=20 HSPACE=1 BORDER=0>连接到 Internet。</A>
+<BR CLEAR=all>
+<SPAN STYLE="margin-left: 27px" CLASS="normal">
+如果您从来没有和 Internet 连接过，请单击以上句子以启动 Internet 连接向导，此向导将帮助您登记服务。当您和 Internet 连接以后，请从“开始”菜单选择“Windows Update”图标，您就可以通过 Internet Explorer 直接进入“Windows Update”站点。如果您已经有 Internet 连接，请从“开始”菜单选择“Windows Update”图标。 Internet Explorer 将会启动“Windows Update”站点。 
+</SPAN>
+<br><br>
+<A HREF="javascript:window.close()"><IMG ID="closeIcon" SRC="wuicon2.gif" HEIGHT=20 WIDTH=20 HSPACE=1 BORDER=0>下次访问“Windows Update”站点。  </A>
+<BR CLEAR=all>
+<SPAN STYLE="margin-left: 27px" CLASS="normal">
+单击以上的 X 图标以关闭浏览器窗口。执行如下操作，随时都可以创建到 Internet 的连接: 
+<ul>
+<li>转到“开始”菜单。
+<li>选择“程序”组。选择 Internet Explorer，然后再单击“Internet 连接向导”。
+<li>Internet 连接向导将帮助您选择 Internet 服务提供商 (ISP) 或者将您连接到局域网 (LAN)。</DIV>
+</ul>
+<P>
+连接到 Internet 后，请从“开始”菜单选择“Windows Update”站点，您就可以通过 Internet Explorer 进入 “Windows Update”站点。
+</SPAN>
+<BR><BR>
+<A HREF="javascript:window.close()"><IMG ID="closeIcon" SRC="wuicon2.gif" HEIGHT=20 WIDTH=20 HSPACE=1 BORDER=0>我想从“开始”菜单删除“Windows Update”。</A>
+<BR CLEAR=all>
+<SPAN STYLE="margin-left: 27px" CLASS="normal">
+单击以上的 X 图标以关闭浏览器窗口。执行如下操作，随时都可以从“开始”菜单删除“Windows Update”图标: 
+<UL>
+<LI>转到“开始”菜单。
+<LI>选择“Windows Update”站点。
+<LI>单击鼠标右键。
+<LI>单击“删除”。
+</UL>
+</SPAN>
+
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+</TD>
+</TR>
+</TABLE>
+
+<OBJECT ID="WUpdInfo" WIDTH=0 HEIGHT=0 TYPE="application/x-oleobject"
+  CLASSID="clsid:A3863C2E-86EB-11D1-A9DB-00C04FB16F9E">
+        <PARAM NAME="_Version" VALUE="65536">
+        <PARAM NAME="_ExtentX" VALUE="0">
+        <PARAM NAME="_ExtentY" VALUE="0">
+        <PARAM NAME="_StockProps" VALUE="0">
+</OBJECT>
+</BODY>
+</HTML>

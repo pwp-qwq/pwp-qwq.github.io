@@ -1,0 +1,264 @@
+<HTML>
+<HEAD>	
+<!--
+Copyright (c) 2000 Microsoft Corporation
+-->
+<TITLE>娱乐与多媒体</TITLE>
+
+<META NAME="KEYWORDS" CONTENT="教程; 游历; Windows Millennium Edition 教程;游历 Windows Millennium Edition;:">
+<META NAME="DESCRIPTION" CONTENT="学习 Windows Millennium Edition 简明教程">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+
+<LINK HREF="css/tour.css" REL="stylesheet" TYPE="text/css"> 
+
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+
+function document_onkeypress() {
+top.HandleKeys(window.event.keyCode,window.event.shiftKey,window.event.altKey,window.event.ctrlKey)
+
+}
+
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=javascript FOR=document EVENT=onkeypress>
+<!--
+ document_onkeypress()
+//-->
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function enintro(){
+
+var frm = parent.frames
+frm.content.location="en_infra.htm";
+fnfocus(1);
+
+}
+
+
+function pict(){
+
+var frm = parent.frames
+frm.content.location="en_cwfra.htm";
+fnfocus(2);
+
+}
+
+function mypict(){
+
+var frm = parent.frames
+frm.content.location="en_myfra.htm";
+fnfocus(3);
+
+}
+
+function video(){
+
+var frm = parent.frames
+frm.content.location="en_vifra.htm";
+fnfocus(4);
+
+}
+
+function games(){
+
+var frm = parent.frames
+frm.content.location="en_gafra.htm";
+fnfocus(5);
+
+}
+
+function fnkey(i)
+{
+	switch(i)
+	{
+		case 1:
+				if(event.keyCode==13)
+				{
+					enintro();
+					break;
+				}
+						
+		case 2:
+				if(event.keyCode==13)
+				{
+					pict();
+					break;
+				}
+				
+		case 3:
+				if(event.keyCode==13)
+				{
+					mypict();					
+					break;
+				}
+				
+		case 4:
+				if(event.keyCode==13)
+				{
+					video();
+					break;
+				}
+				
+		case 5:			
+				if(event.keyCode==13)
+				{
+					games();
+					break;
+				}				
+	 					
+	}			
+	
+}	
+
+function fnfocus(i)
+{
+	document.all.ENMN1.className="unsel";	
+	document.all.ENMN2.className="unsel";
+	document.all.ENMN3.className="unsel";
+	document.all.ENMN4.className="unsel";
+	document.all.ENMN5.className="unsel";
+		
+	switch(i)
+	{
+	case 1:
+		document.all.ENMN1.className="ensel";
+		break;
+		
+	case 2:
+		document.all.ENMN2.className="ensel";
+		break;
+		
+	case 3:
+		document.all.ENMN3.className="ensel";
+		break;
+	
+	case 4:
+		document.all.ENMN4.className="ensel";
+		break;	
+	
+	case 5:
+		document.all.ENMN5.className="ensel";
+		break;			
+			
+	}
+}
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY onLoad="fnfocus(2)" CLASS="en-MenuBackground" TABINDEX="-1">
+<TABLE CELLPADDING="1" CELLSPACING="0" BORDER="0" WIDTH="100%" CLASS="indent">
+
+<TR>
+	<TD WIDTH="50%" VALIGN="BOTTOM" HEIGHT="62px">         
+	</TD>  
+</TR>
+
+
+<TR ID="tocM_1">
+<TD ID="ENMN1" WIDTH="100%" HEIGHT="25px" onClick="enintro();" onfocus="fnfocus(1)" TABINDEX="5" onkeypress="fnkey(1)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+说明</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+<TR ID="tocM_2">
+<TD ID="ENMN2" WIDTH="100%" HEIGHT="25px" onclick="pict();" onfocus="fnfocus(2)" TABINDEX="1" onkeypress="fnkey(2)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+扫描仪与<BR>照相机</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_3">
+<TD ID="ENMN3" WIDTH="100%" HEIGHT="25px" onclick="mypict();" onfocus="fnfocus(3)" TABINDEX="2" onkeypress="fnkey(3)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+My Pictures<BR> 文件夹</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+<TR ID="tocM_4">
+<TD ID="ENMN4" WIDTH="100%" HEIGHT="25px" onclick="video();" onfocus="fnfocus(4)" TABINDEX="3" onkeypress="fnkey(4)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+Windows Movie <BR>Maker</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_5">
+<TD ID="ENMN5" WIDTH="100%" HEIGHT="25px" onclick="games();" onfocus="fnfocus(5)" TABINDEX="4" onkeypress="fnkey(5)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+游戏</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+</TABLE>
+
+</BODY>
+</HTML>

@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=gb2312">
+<TITLE>Windows Media Player 功能概览</TITLE>
+	<HTA:APPLICATION ID="oHTA"
+		APPLICATIONNAME="WMPTour"
+		BORDER="thin"
+		BORDERSTYLE="normal"
+		CAPTION="yes"
+		maximizeButton="no"
+		minimizeButton="no"
+		ICON="img/wmptour.ico"
+		SHOWINTASKBAR="no"
+		SINGLEINSTANCE="yes"
+		SYSMENU="yes"
+		VERSION="1.0"
+		WINDOWSTATE="normal"
+	>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="css/wmptour.css">
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="css/controls.css">
+<SCRIPT LANGUAGE="JScript" SRC="scr/controls.js"></SCRIPT>
+<SCRIPT LANGUAGE="JScript" SRC="scr/tour.js"></SCRIPT>
+<SCRIPT LANGUAGE="JScript" SRC="scr/events.js"></SCRIPT>
+<SCRIPT LANGUAGE="JScript">
+	var MyTour = newTour();
+	sizeFullScreen();
+	function Initialize()
+	{
+		/* scene parameters: scene-title, scene-index, scene-action, scene-duration (milleseconds), video-media, sound-media */
+		MyTour.newScene("", 1, "ClickTopicButton(1);", 26000, "", "wmpaud1.wav");
+		MyTour.newScene("", 2, "ClickTopicButton(2);", 16000, "", "wmpaud2.wav");
+		MyTour.newScene("", 3, "ClickTopicButton(3);", 16000, "", "wmpaud3.wav");
+		MyTour.newScene("", 4, "ClickTopicButton(4);", 31000, "CopyCD.wmv", "wmpaud4.wav");
+		MyTour.newScene("", 5, "ClickTopicButton(5);", 26000, "MdLib.wmv", "wmpaud5.wav");
+		MyTour.newScene("", 6, "ClickTopicButton(6);", 24000, "RTuner.wmv", "wmpaud6.wav");
+		MyTour.newScene("", 7, "ClickTopicButton(7);", 13000, "", "wmpaud7.wav");
+		MyTour.newScene("", 8, "ClickTopicButton(8);", 26000, "NuSkin.wmv", "wmpaud8.wav");
+		MyTour.newScene("", 9, "ClickTopicButton(9);", 26000, "", "wmpaud9.wav");
+		document.title = getHTML("ApplicationTitle");
+		WriteTopicButtonsCaption();
+		TopicButtonEVENTonclick(1);
+		TourPlayEVENTonmouseout(idTourPlay.STAT);		
+		AudioPlayEVENTonmouseout(idAudioPlay.STAT);
+		idBackToTour.innerHTML = getHTML("btnBackToTourCaption");
+		idTourExitText.innerHTML = getHTML("btnExitCaption");
+		idBody.style.visibility = "visible";		
+		idTimeElapsed.title = getHTML("titleTimeElapsed");
+		MyTour.start();		
+		sizeBody();
+	}
+</SCRIPT>
+<SCRIPT FOR="idTopicButton" EVENT="onmouseover">TopicButtonEVENTonmouseover(this.IDX)</SCRIPT>
+<SCRIPT FOR="idTopicButton" EVENT="onmouseout">TopicButtonEVENTonmouseout(this.IDX)</SCRIPT>
+<SCRIPT FOR="idTopicButton" EVENT="onclick">TopicButtonEVENTonclick(this.IDX)</SCRIPT>
+<SCRIPT FOR="idShowMeHow" EVENT="onmouseover">ShowMeHowEVENTonmouseover()</SCRIPT>
+<SCRIPT FOR="idShowMeHow" EVENT="onmouseout">ShowMeHowEVENTonmouseout()</SCRIPT>
+<SCRIPT FOR="idShowMeHow" EVENT="onclick">ShowMeHowEVENTonclick()</SCRIPT>
+<SCRIPT FOR="idAudioPlay" EVENT="onmouseover">AudioPlayEVENTonmouseover(this.STAT)</SCRIPT>
+<SCRIPT FOR="idAudioPlay" EVENT="onmouseout">AudioPlayEVENTonmouseout(this.STAT)</SCRIPT>
+<SCRIPT FOR="idAudioPlay" EVENT="onclick">AudioPlayEVENTonclick(this.STAT)</SCRIPT>
+<SCRIPT FOR="idTourPlay" EVENT="onmouseover">TourPlayEVENTonmouseover(this.STAT)</SCRIPT>
+<SCRIPT FOR="idTourPlay" EVENT="onmouseout">TourPlayEVENTonmouseout(this.STAT)</SCRIPT>
+<SCRIPT FOR="idTourPlay" EVENT="onclick">TourPlayEVENTonclick(this.STAT)</SCRIPT>
+<SCRIPT FOR="idTourExit" EVENT="onmouseover">TourExitEVENTonmouseover()</SCRIPT>
+<SCRIPT FOR="idTourExit" EVENT="onmouseout">TourExitEVENTonmouseout()</SCRIPT>
+<SCRIPT FOR="idTourExit" EVENT="onclick">TourExitEVENTonclick()</SCRIPT>
+<SCRIPT FOR="idBackToTour" EVENT="onclick">BackToTourEVENTonclick()</SCRIPT>
+<SCRIPT FOR="idMediaPlayer" EVENT="playStateChange">if (this.playState == 1) BackToTourEVENTonclick()</SCRIPT>
+</HEAD>
+<BODY ID="idBody" SCROLL="no" onload="Initialize()" oncontextmenu="return false;" onselectstart="return false;">
+<DIV ID="idBodyTray" CLASS="clsBodyTray">
+	<IMG ID="idBackGroundImg" CLASS="clsBackGroundImg" SRC="img/bkgrnd.gif" BORDER="0">
+	<DIV ID="idTopTray" CLASS="clsTopTray"><SPAN ID="idTopTrayText" CLASS="clsTopTrayText"></SPAN></DIV>
+	<IMG ID="idWMLogoImg" CLASS="clsWMLogoImg" SRC="img/wmlogo.gif">
+	<DIV ID="idTopicButtonsTray" CLASS="clsTopicButtonsTray" CURCLICK="0">
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="1" STYLE="top:000"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn1.gif" CLASS="clsTopicButtonImg"></DIV>
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="2" STYLE="top:037"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn2.gif" CLASS="clsTopicButtonImg"></DIV>
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="3" STYLE="top:074"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn3.gif" CLASS="clsTopicButtonImg"></DIV>
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="4" STYLE="top:111"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn4.gif" CLASS="clsTopicButtonImg"></DIV>
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="5" STYLE="top:148"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn5.gif" CLASS="clsTopicButtonImg"></DIV>
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="6" STYLE="top:185"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn6.gif" CLASS="clsTopicButtonImg"></DIV>
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="7" STYLE="top:222"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn7.gif" CLASS="clsTopicButtonImg"></DIV>
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="8" STYLE="top:259"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn8.gif" CLASS="clsTopicButtonImg"></DIV>
+	<DIV ID="idTopicButton" CLASS="clsTopicButton" IDX="9" STYLE="top:296"><SPAN CLASS="clsTopicButtonCaption"></SPAN><IMG SRC="img/btnscene/btn9.gif" CLASS="clsTopicButtonImg"></DIV>
+	</DIV>
+	<DIV ID="idTextAreaTray" CLASS="clsTextAreaTray">
+		<DIV ID="idTextAreaTitle" CLASS="clsTextAreaTitle"></DIV>
+		<DIV ID="idTextAreaText" CLASS="clsTextArea"></DIV>
+	</DIV>
+	<DIV ID="idBottomTray" CLASS="clsBottomTray">
+		<DIV ID="idShowMeHow" CLASS="clsShowMeHow" STAT="0">
+			<IMG ID="idShowMeHowImg" SRC="img/btnctrl/wmpshwme.gif" CLASS="clsImgShowMeHow">
+			<SPAN ID="idShowMeHowText" CLASS="clsTextControlsShowMeHow"></SPAN>
+		</DIV>
+		<DIV ID="idAudioPlay" CLASS="clsAudioPlay" STAT="0">
+			<IMG ID="idAudioPlayImg" SRC="img/btnctrl/wmpaudio.gif" CLASS="clsImgControls">
+			<SPAN ID="idAudioPlayText" CLASS="clsTextControls"></SPAN>
+		</DIV>
+		<DIV ID="idTourPlay" CLASS="clsTourPlay" STAT="1">
+			<IMG ID="idTourPlayImg" SRC="img/btnctrl/wmpplay.gif" CLASS="clsImgControls">
+			<SPAN ID="idTourPlayText" CLASS="clsTextControls"></SPAN>
+		</DIV>
+		<DIV ID="idTourExit" CLASS="clsTourExit" STAT="0">
+			<IMG ID="idTourExitImg" SRC="img/btnctrl/wmpexit.gif" CLASS="clsImgControls">
+			<SPAN ID="idTourExitText" CLASS="clsTextControls"></SPAN>
+		</DIV>
+		
+	</DIV>
+	<IFRAME ID="idAudioTrack" SRC="audio/snd.htm" STYLE="visibility:hidden; position:absolute; width:1; height:1;"></IFRAME>
+	<IFRAME ID="idContents" SRC="cnt/contents.htm" STYLE="visibility:hidden; position:absolute; width:1; height:1;"></IFRAME>
+	<DIV ID="idTimeElapsed" CLASS="clsTimeElapsed" STAT="1"></DIV>
+</DIV>
+	<DIV ID="idShowMeHowTray" CLASS="clsShowMeHowTray">
+			<DIV ID="idShowMeHowTrayText" CLASS="clsShowMeHowTrayText"></DIV>
+			<OBJECT NAME="MediaPlayer" ID="idMediaPlayer" WIDTH="640" HEIGHT="480" STYLE="position:absolute;" CLASSID="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6" TYPE="application/x-oleobject">
+		 		<PARAM NAME="URL"			VALUE="">
+				<PARAM NAME="autoStart" 	VALUE="false">
+				<PARAM NAME="uiMode"		VALUE="none">
+			</OBJECT>
+			<DIV ID="idBackToTour" CLASS="clsBackToTour"></DIV>
+	</DIV>
+</BODY>
+</HTML>

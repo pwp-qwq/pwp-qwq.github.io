@@ -1,0 +1,721 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns:MSIE="urn:default" id="htmlText" style="width: 365px; height: 225px">
+
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<title id="TitleText">Internet Explorer 即需即装</title>
+<META http-equiv="PICS-Label" content='(PICS-1.1 "http://www.rsac.org/ratingsv01.html" l gen true comment "RSACi North America Server" by "inet@microsoft.com" on "1997.06.30T14:48-0500" r (n 0 s 0 v 0 l 0))'>
+<style type="text/css">
+	p,td,input { font:9pt 宋体, MS Song; cursor:default}
+	
+	body { font:9pt 宋体, MS Song; color: windowtext;
+		background:menu;}
+</style>
+
+<STYLE>
+	MSIE\:CLIENTCAPS {behavior:url(#default#clientcaps)}
+</STYLE>
+
+<script for="window" event="onload()" language="JavaScript">
+
+	window.setTimeout("FirstLoad()",100);
+
+</script>
+
+<!-- onbeforeunload can trap user closing dialog during download -->
+<script for="window" event="onbeforeunload()" language="JavaScript">
+
+	// Do not allow the page to close if user is installing.
+	if (installingState == true)
+		return L_WARNINGINSTALLING_TEXT;
+
+</script>
+
+<script for="window" event="onunload()" language="JavaScript">
+	if((errorhandlerflag == false) && (installingState == true))
+		{
+		window.external.returnValue = CANCELLED;
+		engine.Abort(0);	// If user cancels download by unloading the page, make sure engine aborts.
+		}
+
+</script>
+</head>
+
+<body tabindex="-1">
+<MSIE:CLIENTCAPS ID="idClCap" />
+
+
+
+<!-- HTML document begins below -->
+
+<!-- Table for the entire dialog box -->
+<table cellspacing=3 width=100% height=99% border=0>
+<tr>
+    <td valign=top style="padding-top:4px; padding-left:6px; padding-right:2px" rowspan=2><img id="alertImage" src="jitalert.gif"></td>
+    <td valign=top colspan=6>
+		<!-- Inner table - the list of components -->
+		<table height="100px" width="100%" style="border-collapse:collapse;" border=0>
+			<tr>
+				<td id="WarningToDownloadText" height=20 style="padding-top:1px; padding-bottom:6px; padding-left:3px">要正确安装该页，您需要下载并安装下列组件:</td>
+			</tr>
+			<tr>
+				<td height=4></td>
+			</tr>
+			<tr valign="top">
+				<td style="padding-left:4px">
+					<div style="overflow: 'auto'">
+
+<div class="ComponentName" id="defaultName">正在加载，请稍候...</div>
+<div class="ComponentName" id="VRML" style="display:'none'" helpid="50463">VRML 2.0 浏览器</div>
+<div class="ComponentName" id="JAVAVMJIT" style="display:'none'" helpid="50464">Microsoft 虚拟机</div>
+<div class="ComponentName" id="IELPKJA" style="display:'none'" helpid="50465">日语显示支持</div>
+<div class="ComponentName" id="IELPKKO" style="display:'none'" helpid="50466">朝鲜语显示支持</div>
+<div class="ComponentName" id="IELPKPE" style="display:'none'" helpid="50467">泛欧洲语言显示支持</div>
+<div class="ComponentName" id="IELPKZHT" style="display:'none'" helpid="50468">繁体中文显示支持</div>
+<div class="ComponentName" id="IELPKZHC" style="display:'none'" helpid="50469">简体中文显示支持</div>
+<div class="ComponentName" id="IELPKTH" style="display:'none'" helpid="50470">泰语显示支持</div>
+<div class="ComponentName" id="IELPKIW" style="display:'none'" helpid="50471">希伯来语显示支持</div>
+<div class="ComponentName" id="IELPKVI" style="display:'none'" helpid="50472">越南语显示支持</div>
+<div class="ComponentName" id="IELPKAR" style="display:'none'" helpid="50473">阿拉伯语显示支持</div>
+<div class="ComponentName" id="IELPKAD" style="display:'none'" helpid="50474">自动选择语言</div>
+<div class="ComponentName" id="MEDIAPLAYER" style="display:'none'" helpid="50475">Windows Media Player</div>
+<div class="ComponentName" id="ACTIVEPAYMENT" style="display:'none'" helpid="50477">Wallet</div>
+<div class="ComponentName" id="AOLSUPP" style="display:'none'" helpid="50478">支持查看 AOL 图形</div>
+<div class="ComponentName" id="MOBILEPK" style="display:'none'" helpid="50479">脱机浏览软件包</div>
+<div class="ComponentName" id="ICW" style="display:'none'" helpid="50480">Internet 连接向导</div>
+<div class="ComponentName" id="USP10" style="display:'none'" helpid="50481">Uniscribe</div>
+<div class="ComponentName" id="DIRECTANIMATION" style="display:'none'" helpid="50504">DirectAnimation</div>
+<div class="ComponentName" id="DIRECTOR" style="display:'none'" helpid="50505">Macromedia Shockwave</div>
+<div class="ComponentName" id="FLASH" style="display:'none'" helpid="50553">Macromedia Flash Player</div>
+<div class="ComponentName" id="HELPCONT" style="display:'none'" helpid="50506">Internet Explorer 帮助</div>
+<div class="ComponentName" id="WEBFOLDERS" style="display:'none'" helpid="50554">Web 文件夹</div>
+<div class="ComponentName" id="TRIDATA" style="display:'none'" helpid="50508">动态 HTML 数据捆绑</div>
+<div class="ComponentName" id="MSVBScript" style="display:'none'" helpid="50556">Visual Basic 脚本支持</div>
+<div class="ComponentName" id="MSVML" style="display:'none'" helpid="50557">Vector Graphic Rendering (VML)</div>
+<div class="ComponentName" id="ADDRESSBOOK" style="display:'none'" helpid="50558">Windows 通讯簿</div>
+<div class="ComponentName" id="EXTRAPACK" style="display:'none'" helpid="50509">浏览增强组件</div>
+
+					</div>
+				</td>
+			</tr>
+		</table>
+		<!-- End inner components table -->
+	</td>
+</tr>
+<tr height="20px" id="DownloadTexts">
+	<td nowrap width="20%" valign="bottom" id="SizeText" helpid="50457" style="padding-left:4px">下载大小:</td>
+	<td width="18%" nowrap align="right" valign="bottom" id="DLSizeText" helpid="50457"><span id="totalDownloadSize"></span></td>
+	<td width="10%" id="blanksp1">&nbsp;</td>
+	<td nowrap width="20%" valign="bottom" id="DownloadTimeText" helpid="50458">下载时间:</td>
+	<td width="16%" nowrap align="right" valign="bottom" id="DLTimeText" helpid="50458"><span id="totalDownloadTime"></span></td>
+	<td width="16%" id="blanksp2">&nbsp;</td>
+</tr>
+
+<!-- Checkbox section -->
+<tr height="20px" align="top">
+	<td rowspan=2><object ID="engine" WIDTH="1" HEIGHT="1" CLASSID="CLSID:6E449683-C509-11CF-AAFA-00AA00B6015C" CODEBASE="actsetup.cab#Version=4,71,1712,0"></object></td>
+	<td colspan=6><input type="checkbox" title="不下载这些组件。" id="checkboxNever" accessKey="V" onclick="CheckClick()" tabindex="3" helpid="50459">
+		<span id="NeverDownloadText" onclick="checkboxNever.click()" style="font-family: 宋体, MS Song; font-size: 9pt; background: buttonface" tabindex="-1" helpid="50459">
+			不下载这些组件(<u>V</u>)
+		</span>
+	</td>
+</tr>
+
+
+<!-- action buttons -->
+<tr>
+	<td align="right" valign="bottom" colspan=6>
+		<table style="border-collapse:collapse;" border=0>
+			<tr>
+				<td id="OKButtonbox">
+					<button id="OKButton" style="width: 75px; font: 9pt 宋体, MS Song" type="button" onClick="downloadComponents()" tabindex="1" helpid="50510">确定</button>
+				</td>
+				<td id="downloadButtonbox">
+					<button id="downloadButton" style="width: 75px; font: 9pt 宋体, MS Song" type="button" onClick="downloadComponents()" tabindex="1" helpid="50461" accessKey="D">下载(<u>D</u>)</button>
+				</td>
+				<td id="blanksp3">&nbsp;</td>
+				<td>
+					<button id="cancelButton" style="width: 75px; font: 9pt 宋体, MS Song" type="button" onClick="verifyCancel()" tabindex="2" helpid="50462">取消</button>
+				</td>
+			</tr>
+		</table>
+</tr>
+</table>
+
+<script language="JavaScript">
+
+// Localizable Text Strings
+L_KILOBYTES_TEXT = " KB";
+L_MEGABYTE_TEXT = " MB";
+L_MINUTES_TEXT = " 分钟";
+L_LessThanAMinute_TEXT = "< 1 分钟";
+L_hr1_TEXT = "1 小时";
+L_hrs_TEXT = " 小时";
+L_LOCAL_TEXT = " (本地可用)";
+L_MISSINGCOMPONENTNAME_TEXT = "Internet Explorer 中发生二进制代码不匹配错误。";
+L_ReInstall_TEXT = "请重新安装，或者选择 Internet Explorer“工具”菜单下的“Windows Update”，安装 Internet Explorer 更新版。";
+L_DIALOGERROR_TEXT = "即需即装检测到错误。";
+L_DIALOGERROR2_TEXT = "您可以手工下载该页(由 Internet Explorer 直接调用)。";
+L_WARNINGINSTALLING_TEXT = "您会中断组件的安装。";
+L_ALTWARNINGDOWNLOAD_TEXT = "要用 Internet Explorer 执行该操作，您需要下载并安装下列组件:";
+L_ALTLANGUAGEDOWNLOAD_TEXT = "要正确显示语言字符，您需要下载并安装下列组件:";
+L_DLFail_TEXT="组件下载失败。";
+L_InstallFail_TEXT = "组件安装失败。";
+L_ServerError_TEXT = "即需即装无法连接到要求的网络或 Internet 服务器，下载组件。";
+L_UnknownError_TEXT = "产生未知错误。";
+L_ProductUpdates_TEXT = "选择 Internet Explorer“工具”菜单下的“Windows Update”，尝试安装列出的组件。";
+L_UnChecking_TEXT = "请检查 Internet Explorer “文件”菜单下的“脱机工作”没有被选中。";
+L_NotConnected_TEXT = "请确认仍连接着网络或 Internet。";
+L_CertRefuse_TEXT = "正在下载的文件没有签名，或者您没有接受 Authenticode 证书。";
+L_IBusy_TEXT = "Internet 可能正忙。";
+L_SecurityHigh_TEXT = "当前区域的安全设置可能被设置为“高”。";
+L_SecurityHigh1_TEXT = "该设置使 ActiveX 控件无法正常执行功能。";
+L_SecurityHigh2_TEXT = "要重新启动“即需即装”，请选择 Internet Explorer “工具”菜单的“Internet 选项”中的“安全”选项卡，将区域的安全设置更改为“中”。";
+L_SecurityHigh3_TEXT = "然后关闭 Internet Explorer 属性对话框，然后按浏览器上的“刷新”按钮。";
+L_OfflineAlert_TEXT = "当您脱机工作时，即需即装可能无法正常工作。";
+L_OfflineAlert2_TEXT = "请不要复选 Internet Explorer“文件”菜单下的“脱机工作”，继续安装之前恢复 Internet 连接。";
+L_AdminRights_TEXT = "您必须作为管理员登录才能完成该过程。";
+
+// Return values from this HTML dialog
+SUCCESS = 0;  // Component successfully downloaded and installed
+CANCELLED = 2;	  // User canceled dialog 
+NEVERASK = 3; // User requested never to be asked to d/l this component again
+ERROR_SUCCESS_REBOOT_REQUIRED = 3010;      // d/l reboot required
+
+// Initialize variables 
+componentShown = false;		// Description of component not shown yet
+							// used to make this happen only once on
+							// engineState = 3 (ready)
+downloadError = false;		// Marked true if ActiveSetup had a problem downloading
+dlErrorResult = 0;			// No download error result
+installingState = false;	// ActiveSetup is not installing yet
+errorhandlerflag = false;
+stophelp = false;
+isoffline = false;
+AdminError = false;
+
+function FirstLoad()
+{
+	firstloaderrorcheck = true;
+	window.external.returnValue = CANCELLED;
+	firstloaderrorcheck = false;
+	GetDownloadSpeed();
+	StoreParamsArray(); //load the component names in array
+	SetCIFandURL();  //load the CIF file after page loads
+}
+
+function verifyCancel()
+{
+	window.external.returnValue = CANCELLED; // Cancel d/l
+	window.close();
+}
+
+function downloadComponents()
+{
+
+	if (checkboxNever.checked == false)
+		{
+		document.all.downloadButton.disabled = true;
+		document.all.downloadButton.style.color = "inactivecaption";
+
+	   /* ProcessComponents Codes 
+	    * 0 = unknown
+ 	    * 1 = Don't do reboot UI
+	    * 2 = Don't show any UI
+	    * 4 = No End summary
+ 	    * 32 = Ignore Download errors
+		*/
+	   engine.ProcessComponents(4);
+	   }
+	else
+		{
+		window.external.returnValue = NEVERASK;	 // Never ask to download this component again
+		window.close();
+		}
+
+}
+
+
+/*
+ * function stripPlatform
+ * 
+ * Removes the CIF's ComponentID _NTX86 or _NTALPHA designations
+ * when showing the friendly name/description of the component.
+ * ActiveSetup still gets the full ComponentID
+ */
+function stripPlatform(componentID)
+{
+	len = componentID.length;
+	if (componentID.substring(len-6,len).toUpperCase()=="_NTX86")  // Check for _NTX86
+		return componentID.substring(0,len-6)
+	else if (componentID.substring(len-8,len).toUpperCase()=="_NTALPHA")  // Check for _NTALPHA
+		return componentID.substring(0,len-8)
+	else return componentID;	// For Win 9X
+}
+
+
+function errorHandler(message, url, line)
+{
+	errorhandlerflag = true;
+	if(firstloaderrorcheck == true)
+		alert(L_DIALOGERROR_TEXT + "\n\n" + L_DIALOGERROR2_TEXT);
+	else
+		{
+		alert(L_DIALOGERROR_TEXT + "\n\n" + message);
+		window.external.returnValue = CANCELLED;
+		}
+	window.close();
+	return true;		// don't show real error message
+}
+
+function WhatKeyPressed()
+{
+	if(window.event.keyCode == "27")
+		verifyCancel();
+}
+
+function callHelp(elm) 
+
+{ 
+	if (stophelp != true)
+		{
+
+		if (null != elm.helpid) 
+			window.showHelp("iexplore.hlp", elm.helpid,"popup"); 
+
+		else 
+			{
+			if ("BODY" != elm.tagName) 
+				callHelp(elm.parentElement);
+			} 
+		}
+
+}
+
+function DontDragMe()
+{
+	window.event.returnValue = false;
+}
+
+/*
+ * function fillArray()
+ *
+ * Parse the componentIDs passed and get size and friendly name info.
+ *
+ * URL: www.example.com/jit.htm
+ * dialogArguments: feature=VRML&feature=JAVAVMJIT
+ * Split by &, then save the componentIDs
+ */
+function fillArray()
+{
+	componentID = new Array();
+
+	for (i = 0; i < paramsArray.length; i++)
+	{	
+		/*
+		 * paramsArray looks like:
+		 * feature=componentID&feature=componentID&flag=force
+		 * componentIDs should be processed;
+		 * flags are handled separate from components
+		 */
+		if (paramsArray[i].split("=")[0] == "feature")
+		{	
+			componentID[i] = paramsArray[i].split("=")[1];
+			
+			if (componentID[i] == null) 
+				MissingComponent();							// Urlmon didn't send a component name
+			retSet = engine.SetAction(componentID[i], 1);	// Queue up components to download
+			if(retSet != 0)
+				MissingComponent();							// Urlmon didn't send a component name
+			compNameStripped = stripPlatform(componentID[i]);
+			document.all(compNameStripped).style.display='';
+			if (compNameStripped == "VRML")		// If vrml qued check if java and media player installed
+				{
+					if(document.all.idClCap.isComponentInstalled("MSJava","ProgID","4,79,2252,0") != true)
+						document.all("JAVAVMJIT").style.display='';
+					if(document.all.idClCap.isComponentInstalled("{22d6f312-b0f6-11d0-94ab-0080c74c7e95}","componentid","5,01,51,0423") != true)
+						document.all("MEDIAPLAYER").style.display='';
+				}
+			else if((compNameStripped == "IELPKTH") || (compNameStripped == "IELPKIW") || (compNameStripped == "IELPKVI") || (compNameStripped == "IELPKAR") || (compNameStripped == "IELPKAD"))
+				{
+					if(document.all.idClCap.isComponentInstalled("{3bf42070-b3b1-11d1-b5c5-0000f8051515}","componentid","1,0161,1890,3") != true)
+						document.all("USP10").style.display='';
+				}
+			else if(compNameStripped == "WEBFOLDERS")	// If webfolders qued check if data binding installed
+				{
+					if(document.all.idClCap.isComponentInstalled("{9381D8F2-0288-11D0-9501-00AA00B911A5}","componentid","5,3711,9,0") != true)
+						document.all("TRIDATA").style.display='';
+				}
+
+			if (compNameStripped == "MOBILEPK")		// Special case wording for MobilePk
+				document.all.WarningToDownloadText.innerText = L_ALTWARNINGDOWNLOAD_TEXT;
+			else if (compNameStripped == "HELPCONT")	// Special case wording for Helpcont, disable dialog Help
+				{
+				document.all.WarningToDownloadText.innerText = L_ALTWARNINGDOWNLOAD_TEXT;
+				stophelp = true;
+				}
+			else if(compNameStripped.substring(0,5) == "IELPK")							// Special case Lang Packs too
+				document.all.WarningToDownloadText.innerText = L_ALTLANGUAGEDOWNLOAD_TEXT;
+		}
+		else if (paramsArray[i].split("=")[0] == "flag")
+		{
+			// The only flag is the one for disabling "Never download..."						
+			document.all.NeverDownloadText.disabled = true;
+			// underline not shown disabled:
+			document.all.NeverDownloadText.style.color = "inactivecaption";
+			document.all.checkboxNever.disabled = true;
+		}
+		
+	}
+	
+	downloadSize = engine.TotalDownloadsize;
+    downloadTime = Math.round(parseInt(downloadSize) / parseInt(downloadSpeed));
+	if (downloadTime > 60)
+	{
+		downloadHr = Math.round(downloadTime / 60);
+		downloadmin = Math.round(downloadTime % 60);
+		if(downloadHr == 1)
+			{
+			if(downloadmin == 0)
+				downloadTime = L_hr1_TEXT;
+			else
+				downloadTime = (L_hr1_TEXT + " " + downloadmin + L_MINUTES_TEXT);
+			}
+		else
+			{
+			if(downloadmin == 0)
+				downloadTime = (downloadHr + L_hrs_TEXT);
+			else
+				downloadTime = (downloadHr + L_hrs_TEXT + " " + downloadmin + L_MINUTES_TEXT);
+			}
+	}
+	else if(downloadTime < 60)
+	{
+		if((downloadSize != 0) && (downloadTime == 0))
+			downloadTime = L_LessThanAMinute_TEXT;
+		else
+			downloadTime = downloadTime + L_MINUTES_TEXT;
+	}
+	else if(downloadTime == 60)
+		downloadTime = L_hr1_TEXT;
+
+	if (downloadSize > 1024)
+	{
+		MegabyteSize = Math.round((parseInt(downloadSize) / 1024) * 10) / 10;
+		document.all("totalDownloadSize").innerText = MegabyteSize + L_MEGABYTE_TEXT;
+	}
+	else if(downloadSize == 0)
+	{
+		document.all("totalDownloadSize").innerText = downloadSize + L_KILOBYTES_TEXT + L_LOCAL_TEXT;
+		document.all("totalDownloadTime").style.display = "none";
+		document.all("DownloadTimeText").style.display = "none";
+	}
+		
+	else
+		document.all("totalDownloadSize").innerText = downloadSize + L_KILOBYTES_TEXT;
+
+	document.all("totalDownloadTime").innerText = downloadTime;
+	document.all("defaultName").style.display = "none";
+	document.all.downloadButton.disabled = false;
+	document.all.downloadButton.style.color = "buttontext";
+	document.all("downloadButton").focus();
+	document.onhelp = new Function("callHelp(window.event.srcElement)");
+}
+
+function MissingComponent()
+{
+	alert(L_MISSINGCOMPONENTNAME_TEXT + " " + L_ReInstall_TEXT);
+	window.external.returnValue = CANCELLED;
+	window.close();
+}	
+
+function GetDownloadSpeed()
+{
+        if (document.all.idClCap.connectionType == "lan")
+                downloadSpeed = 800;     // good estimate for LAN - 800 KB/min
+        else if (document.all.idClCap.connectionType == "offline")
+		{
+                downloadSpeed = 120;    // default to modem speed if offline
+		isoffline = true;
+		}
+        else
+                downloadSpeed = 120;    // good estimate for 28.8kbps modem, 120 KB/min
+}
+
+function SetCIFandURL()
+{
+	/*
+	 * The control will check the 4 download
+	 * sites in the registry and pull bits from the default.
+	 * If there are no defaults, I will have to pass a hardcoded
+	 * pointer to ms.com's ie5sites.dat.
+	 */
+	ret = engine.SetSitesFile("","","");
+
+	// On error, set BaseURL to default Microsoft site
+	if (ret < 0)
+		{
+		alert(L_InstallFail_TEXT + " " + L_ProductUpdates_TEXT);
+		window.close();
+		}
+	else
+		{
+		engine.SetLocalCif("iesetup.cif");
+		engine.SetCIFFile("iecif.cab","iesetup.cif");	// Gets new CIF from site
+		}	
+}
+
+function StoreParamsArray()
+{
+	/*
+	 * Parse the componentIDs passed in
+	 *
+	 * URL: www.example.com/jit.htm
+	 * dialogArguments: feature=VRML&feature=JAVAVMJIT
+	 * Split by &.
+	 */
+
+	params = window.dialogArguments;
+	paramsArray = params.split("&");
+}
+
+function CheckClick()
+{
+	if (checkboxNever.checked == true)
+		{
+		document.all.DownloadTexts.style.color = "inactivecaption";
+		document.all.downloadButtonbox.style.display = "none";
+		document.all.OKButton.style.display = "";
+		}
+	else
+		{
+		document.all.DownloadTexts.style.color = "buttontext";
+		document.all.downloadButtonbox.style.display = "";
+		document.all.OKButton.style.display = "none";
+		}
+}
+
+/******************************
+ * IMMEDIATELY EXECUTING SCRIPT
+ ******************************/
+
+window.onerror = errorHandler;
+document.onkeypress = WhatKeyPressed;
+document.ondragstart = DontDragMe;
+document.all.OKButton.style.display = "none";
+document.all.downloadButton.disabled = true;
+document.all.downloadButton.style.color = "inactivecaption";
+
+</script>
+<script for="engine" event="OnEngineStatusChange(newstate,substate)" language="JavaScript">
+
+	/*
+	 * If the engine is ready and the component name is not yet shown,
+	 * get the component name and description and fill out the dialog
+	 */
+	if ( (newstate==3) && (componentShown != true) )
+ 	{
+		window.fillArray();
+		componentShown = true;
+	}
+	if (newstate == 2)
+		installingState = true;
+
+</script>
+<script for="engine" event="OnStopInstall(Lresult, String, Lstatus)" language="JavaScript">
+
+	installingState = false;
+
+	/*
+	 * When the ActiveSetup engine is done installing, close the window
+	 * and return SUCCESS if the Lresult is 0 and there wasn't a download
+	 * error along the way in one of the components
+	 */
+
+	if ((downloadError == true) || (Lresult < 0))
+	{
+		/*
+		 * Pass back URLMON error code if component failed.
+		 */
+
+		if ((dlErrorResult == -2147467260) || (Lresult == -2147467260))		// Cancelled
+			{
+			window.external.returnValue = CANCELLED;
+			}
+		else if(dlErrorResult == -2146697210)					// D/L failure - component
+			{
+			alert(L_DLFail_TEXT + " " + L_ProductUpdates_TEXT);
+			window.external.returnValue = dlErrorResult;
+			}
+		else if(Lresult == -2146697210)						// D/L failure - engine
+			{
+			if (isoffline == true)
+				alert(L_OfflineAlert_TEXT + "\n\n" + L_OfflineAlert2_TEXT);
+			else
+				alert(L_DLFail_TEXT + " " + L_ProductUpdates_TEXT);
+			window.external.returnValue = Lresult;
+			}
+		else if((dlErrorResult == -2146697211) || (Lresult == -2146697211))	// Server offline
+			{
+			alert(L_ServerError_TEXT + " " + L_IBusy_TEXT + " " + L_NotConnected_TEXT);
+			if (dlErrorResult < 0)
+				window.external.returnValue = dlErrorResult;
+			else
+				window.external.returnValue = Lresult;
+			}
+		else if((dlErrorResult == -2146697208) || (Lresult == -2146697208))	// JIT reg key munged
+			{
+			if (isoffline == true)
+				alert(L_OfflineAlert_TEXT + "\n\n" + L_OfflineAlert2_TEXT);
+			else
+				alert(L_ServerError_TEXT + " " + L_ProductUpdates_TEXT);
+			if (dlErrorResult < 0)
+				window.external.returnValue = dlErrorResult;
+			else
+				window.external.returnValue = Lresult;
+			}
+		else if((dlErrorResult == -2147467259) || (Lresult == -2147467259))	// Install failure
+			{
+			if(AdminError == true)
+				alert(L_InstallFail_TEXT + " " + L_AdminRights_TEXT);   // No Admin Rights
+			else
+				alert(L_InstallFail_TEXT + " " + L_ProductUpdates_TEXT);
+			if (dlErrorResult < 0)
+				window.external.returnValue = dlErrorResult;
+			else
+				window.external.returnValue = Lresult;
+			}
+		else if((dlErrorResult == -2146762748) || (Lresult == -2146762748))	// Cert refused / failed
+			{
+			alert(L_CertRefuse_TEXT + " " + L_ProductUpdates_TEXT);
+			if (dlErrorResult < 0)
+				window.external.returnValue = dlErrorResult;
+			else
+				window.external.returnValue = Lresult;
+			}
+		else if((dlErrorResult == -2146762485) || (Lresult == -2146762485))	// Security set to HIGH
+			{
+			alert(L_SecurityHigh_TEXT + " " + L_SecurityHigh1_TEXT + " " + L_SecurityHigh2_TEXT + " " + L_SecurityHigh3_TEXT);
+			if (dlErrorResult < 0)
+				window.external.returnValue = dlErrorResult;
+			else
+				window.external.returnValue = Lresult;
+			}
+		else if(((dlErrorResult + " ").substring(0,9) == "-21466972") || ((Lresult + " ").substring(0,9) == "-21466972"))	// General d/l error
+			{
+			alert(L_DLFail_TEXT + " " + L_IBusy_TEXT + " " + L_NotConnected_TEXT);
+			if (dlErrorResult < 0)
+				window.external.returnValue = dlErrorResult;
+			else
+				window.external.returnValue = Lresult;
+			}
+		else
+			{
+			if(AdminError == true)
+				alert(L_InstallFail_TEXT + " " + L_AdminRights_TEXT);   // No Admin Rights
+			else
+				alert(L_UnknownError_TEXT + " " + L_ProductUpdates_TEXT); // Unknown error
+			if (dlErrorResult < 0)
+				window.external.returnValue = dlErrorResult;
+			else
+				window.external.returnValue = Lresult;
+			}
+	} 
+	else if (Lstatus > 0)
+		{
+		/*
+		 * Lstatus = 0  - no reboot needed
+		 * Lstatus = 1  - Reboot needed, user clicked yes 
+		 * Lstatus = 3  - Reboot needed, user clicked no 
+		 */
+
+		window.external.returnValue = ERROR_SUCCESS_REBOOT_REQUIRED;
+
+		}
+	else if (Lresult == 0) 
+		{
+		window.external.returnValue = SUCCESS;		
+		} 
+	window.close();
+
+</script>
+<script for="engine" event="OnStopComponent(ComponentID, Lresult, Phase, FriendlyName, Status)" language="JavaScript">
+
+	/*
+	 * If a component failed to d/l or install correctly, note the Lresult (hr from urlmon)
+	 */
+	 
+	if (Lresult < 0)
+	{
+		downloadError = true;
+		dlErrorResult = Lresult;
+		if(Lresult == -2147024891)	// No Admin Rights
+			AdminError = true;
+	}
+
+	// IE version = VER_CORE
+
+</script>
+
+</body>
+</html>

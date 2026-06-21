@@ -1,0 +1,388 @@
+<HTML>
+<HEAD>	
+<!--
+Copyright (c) 2000 Microsoft Corporation
+-->
+<TITLE>主菜单</TITLE>
+
+<META NAME="KEYWORDS" CONTENT="教程; 游历; Windows Millennium Edition 教程;游历 Windows Millennium Edition;:">
+<META NAME="DESCRIPTION" CONTENT="学习 Windows Millennium Edition 简明教程">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+
+<LINK HREF="css/tour.css" REL="stylesheet" TYPE="text/css"> 
+
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+
+function document_onkeypress() {
+top.HandleKeys(window.event.keyCode,window.event.shiftKey,window.event.altKey,window.event.ctrlKey)
+
+}
+
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=javascript FOR=document EVENT=onkeypress>
+<!--
+ document_onkeypress()
+//-->
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+var otag;
+
+function whintro(){
+
+var frm = parent.frames
+frm.content.location="wh_infra.htm";
+fnfocus(1);
+
+}
+
+function plug(){
+
+var frm = parent.frames
+frm.content.location="wh_hafra.htm";
+fnfocus(2);
+
+}
+
+function hibe(){
+
+var frm = parent.frames
+frm.content.location="wh_hifra.htm";
+fnfocus(3);
+
+}
+
+function syst(){
+
+var frm = parent.frames
+frm.content.location="wh_syfra.htm";
+fnfocus(4);
+
+}
+
+function supp(){
+
+var frm = parent.frames
+frm.content.location="wh_sufra.htm";
+fnfocus(5);
+
+}
+
+function inte(){
+
+var frm = parent.frames
+frm.content.location="wh_mifra.htm";
+fnfocus(6);
+
+}
+
+function msnm(){
+var frm = parent.frames
+frm.content.location="wh_msfra.htm";
+fnfocus(7);
+}
+
+function more(){
+
+var frm = parent.frames
+frm.content.location="wh_otfra.htm";
+fnfocus(8);
+}
+
+
+function fnkey(i)
+{
+	switch(i)
+	{
+		case 1:
+				if(event.keyCode==13)
+				{
+					whintro();
+					break;
+				}
+						
+		case 2:
+				if(event.keyCode==13)
+				{
+					plug();
+					break;
+				}
+				
+		case 3:
+				if(event.keyCode==13)
+				{
+					hibe();					
+					break;
+				}
+				
+		case 4:
+				if(event.keyCode==13)
+				{
+					syst();
+					break;
+				}
+				
+		case 5:			
+				if(event.keyCode==13)
+				{
+					supp();
+					break;
+				}
+	 	case 6:
+				if(event.keyCode==13)
+				{
+					inte();	
+					break;
+				}
+								
+		case 7:		
+				if(event.keyCode==13)
+				{
+					msnm();
+					break;
+				}
+				
+		case 8:
+				if(event.keyCode==13)
+				{
+					more();			
+					break;
+				}
+				
+	}			
+	
+}	
+
+function fnfocus(i)
+{
+	document.all.WHMN1.className="unsel";	
+	document.all.WHMN2.className="unsel";
+	document.all.WHMN3.className="unsel";
+	document.all.WHMN4.className="unsel";
+	document.all.WHMN5.className="unsel";	
+	document.all.WHMN6.className="unsel";
+	document.all.WHMN7.className="unsel";
+	document.all.WHMN8.className="unsel";
+		
+	switch(i)
+	{
+		case 1:
+				document.all.WHMN1.className="whsel";			
+				break;
+		case 2:
+				document.all.WHMN2.className="whsel";	
+				break;
+		case 3:
+				document.all.WHMN3.className="whsel";
+				break;
+	
+		case 4:
+				document.all.WHMN4.className="whsel";
+				break;	
+	
+		case 5:
+				document.all.WHMN5.className="whsel";
+				break;	
+		
+		case 6:
+				document.all.WHMN6.className="whsel";
+				break;	
+		
+		case 7:
+				document.all.WHMN7.className="whsel";
+				break;	
+	
+		case 8:
+				document.all.WHMN8.className="whsel";
+				break;	
+		
+	}
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY onLoad="fnfocus(2)" CLASS="wh-MenuBackground" TABINDEX="-1">
+<TABLE CELLPADDING="1" CELLSPACING="0" BORDER="0" WIDTH="100%" CLASS="indent">
+
+<TR>
+	<TD WIDTH="50%" VALIGN="BOTTOM" HEIGHT="62px">         
+	</TD>  
+</TR>
+
+
+<TR ID="tocM_1">
+<TD ID="WHMN1" WIDTH="100%" HEIGHT="25px" onClick="whintro();" onfocus="fnfocus(1)" TABINDEX="8" onkeypress="fnkey(1)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+说明</DIV>
+
+</TD>
+</TR>
+
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+<TR ID="tocM_2">
+<TD ID="WHMN2" WIDTH="100%" HEIGHT="25px" onclick="plug();" onfocus="fnfocus(2)" TABINDEX="1" onkeypress="fnkey(2)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+即插即用</DIV>
+</TD>
+</TR>
+
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_3">
+
+<TD ID="WHMN3" WIDTH="100%" HEIGHT="25px" onclick="hibe();" onfocus="fnfocus(3)" TABINDEX="2" onkeypress="fnkey(3)" class="tblcellwrap"> 
+<DIV CLASS="tocM">
+休眠和<BR>待机
+</DIV>
+
+</TD>
+</TR>
+
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_4">
+<TD ID="WHMN4" WIDTH="100%" HEIGHT="25px" onclick="syst();" onfocus="fnfocus(4)" TABINDEX="3" onkeypress="fnkey(4)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+系统还原<BR></DIV>
+
+</TD>
+</TR>
+
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_5">
+<TD ID="WHMN5" WIDTH="100%" HEIGHT="25px" onclick="supp();" onfocus="fnfocus(5)" TABINDEX="4" onkeypress="fnkey(5)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">支持 <BR>自动化</DIV>
+
+</TD>
+</TR>
+
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+<TR ID="tocM_6">
+<TD ID="WHMN6" WIDTH="100%" HEIGHT="25px" onclick="inte();" onfocus="fnfocus(6)" TABINDEX="5" onkeypress="fnkey(6)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+共享<BR> Internet <BR>帐号
+</DIV>
+
+</TD>
+</TR>
+
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_7">
+<TD ID="WHMN7" WIDTH="100%" HEIGHT="25px" onclick="msnm();" onfocus="fnfocus(7)" TABINDEX="6" onkeypress="fnkey(7)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+MSN <BR>Messenger<BR>Service
+</DIV>
+
+</TD>
+</TR>
+
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_8">
+<TD ID="WHMN8" WIDTH="100%" HEIGHT="25px" onclick="more();" onfocus="fnfocus(8)" TABINDEX="7" onkeypress="fnkey(8)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+更多<BR>新功能</DIV>
+
+</TD>
+</TR>
+
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+</TABLE>
+
+</BODY>
+</HTML>

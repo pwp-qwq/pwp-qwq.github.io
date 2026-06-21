@@ -1,0 +1,260 @@
+<HTML>
+<HEAD>	
+<!--
+Copyright (c) 2000 Microsoft Corporation
+-->
+<TITLE>开始工作</TITLE>
+
+<META NAME="KEYWORDS" CONTENT="教程; 游历; Windows Millennium Edition 教程;游历 Windows Millennium Edition;:">
+<META NAME="DESCRIPTION" CONTENT="学习 Windows Millennium Edition 简明教程">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+
+<LINK HREF="css/tour.css" REL="stylesheet" TYPE="text/css"> 
+
+
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+
+function document_onkeypress() {
+top.HandleKeys(window.event.keyCode,window.event.shiftKey,window.event.altKey,window.event.ctrlKey)
+
+}
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=javascript FOR=document EVENT=onkeypress>
+<!--
+ document_onkeypress()
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var otag; 
+
+function geintro()
+{
+var frm = parent.frames
+frm.content.location="ge_infra.htm";
+fnfocus(1);
+
+}
+
+
+function desk(){
+var frm = parent.frames
+frm.content.location="ge_defra.htm";
+fnfocus(2);
+
+}
+
+function star(){
+var frm = parent.frames
+frm.content.location="ge_stfra.htm";
+fnfocus(3);
+
+}
+
+function pers(){
+var frm = parent.frames
+frm.content.location="ge_pefra.htm";
+fnfocus(4);
+}
+
+function helpsup(){
+var frm = parent.frames
+frm.content.location="ge_whfra.htm";
+fnfocus(5);
+}
+
+function fnkey(i)
+{
+	switch(i)
+	{
+		case 1:
+				if(event.keyCode==13)
+				{
+					geintro();
+					break;
+				}
+						
+		case 2:
+				if(event.keyCode==13)
+				{
+					desk();
+					break;
+				}
+				
+		case 3:
+				if(event.keyCode==13)
+				{
+					star();					
+					break;
+				}
+				
+		case 4:
+				if(event.keyCode==13)
+				{
+					pers();
+					break;
+				}
+				
+		case 5:			
+				if(event.keyCode==13)
+				{
+					helpsup();
+					break;
+				}				
+	 					
+	}			
+	
+}	
+
+function fnfocus(i)
+{
+	
+	document.all.GEMN1.className="unsel";	
+	document.all.GEMN2.className="unsel";
+	document.all.GEMN3.className="unsel";
+	document.all.GEMN4.className="unsel";
+	document.all.GEMN5.className="unsel";
+		
+	switch(i)
+	{
+	case 1:
+		document.all.GEMN1.className="gesel";
+		break;
+		
+	case 2:
+		document.all.GEMN2.className="gesel";
+		break;
+		
+	case 3:
+		document.all.GEMN3.className="gesel";
+		break;
+	
+	case 4:
+		document.all.GEMN4.className="gesel";
+		break;	
+	
+	case 5:
+		document.all.GEMN5.className="gesel";
+		break;			
+			
+	}
+}
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY onLoad="fnfocus(3)" CLASS="ge-MenuBackground" TABINDEX="-1">
+
+<TABLE CELLPADDING="1" CELLSPACING="0" BORDER="0" WIDTH="100%" CLASS="indent">
+<TR>
+	<TD WIDTH="50%" VALIGN="BOTTOM" HEIGHT="62px">         
+	</TD>  
+</TR>
+
+
+<TR ID="tocM_1">
+<TD ID="GEMN1" WIDTH="100%" HEIGHT="25px" onClick="geintro();" onfocus="fnfocus(1)" TABINDEX="4" onkeypress="fnkey(1)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+说明</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+<TR ID="tocM_2">
+<TD ID="GEMN2" WIDTH="100%" HEIGHT="25px" onclick="desk();" onfocus="fnfocus(2)" TABINDEX="5" onkeypress="fnkey(2)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+桌面</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+
+<TR ID="tocM_3">
+<TD ID="GEMN3" WIDTH="100%" HEIGHT="25px" onclick="star();" onfocus="fnfocus(3)" TABINDEX="1" onkeypress="fnkey(3)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+“开始”菜单</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_4">
+<TD ID="GEMN4" WIDTH="100%" HEIGHT="25px" onclick="pers();" onfocus="fnfocus(4)" TABINDEX="2" onkeypress="fnkey(4)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+个性化<BR>桌面</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+<TR ID="tocM_5">
+<TD ID="GEMN5" WIDTH="100%" HEIGHT="25px" onclick="helpsup();" onfocus="fnfocus(5)" TABINDEX="3" onkeypress="fnkey(5)" class="tblcellwrap"> 
+
+<DIV CLASS="tocM">
+获取帮助<BR>和支持</DIV>
+
+</TD>
+</TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+<TR></TR>
+
+</TABLE>
+
+</BODY>
+</HTML>

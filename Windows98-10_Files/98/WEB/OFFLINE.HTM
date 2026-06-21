@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+<TITLE>欢迎访问 Microsoft 联机支持!</TITLE>
+
+<STYLE TYPE="text/css">
+<!--
+    .normal         {font: 9pt 宋体}
+    BODY            {font: 9pt 宋体}
+    .header         {font: 12pt 宋体; font-weight: bold}
+    .subheader      {font: 10.5pt 宋体; color: #3333FF; font-weight: bold}
+    LI              {font: 9pt 宋体}
+    B               {font: 10.5pt 宋体; font-weight: bold}
+    A               {font: 10.5pt 宋体;font-weight: bold}
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JScript">
+<!--
+    ua=navigator.userAgent;
+    v=navigator.appVersion.substring(0,1);
+    if ((ua.lastIndexOf("MSIE")!=-1) && (v='4')) {
+        document.onmouseover = highlight;
+        document.onmouseout = unhighlight;
+    }
+
+
+    function highlight() {
+        src = event.toElement;
+        if (src.tagName == "A") {
+            src.oldcol = src.style.color;
+            src.style.color = "#FF0000";
+        }
+    }
+
+    function unhighlight() {
+        src=event.fromElement;
+        if (src.tagName == "A") {
+            src.style.color = src.oldcol;
+        }
+    }
+
+//-->
+
+</script>
+
+<SCRIPT LANGUAGE="VBScript">
+<!--
+
+Sub GoWU
+    self.location = WUpdInfo.GetMTSURL("prd=support&ar=w98")
+End Sub
+
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TOPMARGIN=0 LEFTMARGIN=0>
+<TABLE WIDTH=603 CELLSPACING=0 CELLPADDING=0 BORDER=0>
+
+<TR>
+<TD>
+<DIV STYLE="margin-left: 18px; margin-top: 18px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD COLSPAN=2>
+<B CLASS="header">感谢您对联机支持的关注。</B>
+
+</TD>
+</TR>
+<TR>
+<TD COLSPAN=2>
+<br clear=all>
+<FONT FACE="宋体">
+<B>只有连接到 Internet 后，才能访问联机支持。Windows 98 检测到您目前还没有连接到 Internet。</B>
+<p>
+<A HREF="javascript:goWU()">连接到 Internet</A>
+<BR CLEAR=all>
+<SPAN STYLE="margin-left: 27px" CLASS="normal">
+如果以前从未连接到 Internet，“Internet 连接向导”将帮助您逐步完成连接过程。连接到 Internet 以后，浏览器将连接到联机支持站点。如果确信已建立了 Internet 连接，请单击该链接，重试连接到联机支持站点。
+</SPAN>
+<br><br>
+<A HREF="javascript:window.close()">稍后再连接到联机支持</A>
+<BR CLEAR=all>
+<SPAN STYLE="margin-left: 27px" CLASS="normal">
+如果不想现在就连接到联机支持，请单击该链接关闭浏览器窗口。想返回联机支持时，随时可采用以下方法创建新的连接，连接 Internet：
+<ul>
+<li>单击“开始”按钮。
+<li>指向“程序”，再指向“Internet Explorer”，单击“连接向导”。
+<li>“Internet 连接向导”将帮助您选择 Internet 服务提供商 (ISP) 或者连接到局域网 (LAN)。</DIV>
+</ul>
+</SPAN>
+
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+</TD>
+</TR>
+</TABLE>
+
+<OBJECT ID="WUpdInfo" WIDTH=0 HEIGHT=0 TYPE="application/x-oleobject"
+  CLASSID="clsid:A3863C2E-86EB-11D1-A9DB-00C04FB16F9E">
+</OBJECT>
+</BODY>
+</HTML>
