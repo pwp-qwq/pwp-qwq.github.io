@@ -1,0 +1,19 @@
+<smil>
+	<head>
+		<meta name="title" content="»¶Ó­Ê¹ÓÃ RealPlayer 8"/>
+		<meta name="author" content="RealNetworks"/>
+		<meta name="copyright" content="(c)2000, RealNetworks"/>
+
+		<layout>
+			<root-layout height="300" width="350" background-color="black"/>
+			<region id="full_screen" left="0" top="0" height="300" width="350" z-index="1"/>
+		</layout>
+	</head>
+
+	<body>
+		<par>
+                	<animation src="firstrun.swf" region="full_screen" fill="freeze" />
+                	<audio src="firstrun.rm"/>
+		</par>
+	</body>
+</smil>

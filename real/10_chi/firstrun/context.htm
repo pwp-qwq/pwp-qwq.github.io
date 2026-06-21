@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>无标题文档</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script language="JavaScript">
+	<!--
+var connected = parent.window.external.IsNetConnected();
+
+
+function RPOnStateChange( state )
+{
+	if (( connected )&&( state == 0 ))
+	{
+		parent.window.external.OpenURLInPlayerBrowser("dcp://getmedia/getmedia.ini?firstrun","_rphome");
+	}
+}
+
+var timestamp = 0.00
+var timecode = '00:00' 
+function RPOnPositionLengthChange(position, length)
+{
+	secs = parseInt(position / 1000)
+	mins = parseInt(secs / 60)
+	timestamp = (Math.round((mins+((secs%60)/100))
+	* Math.pow(10,2))/Math.pow(10,2))
+	timecode = timestamp + ''
+	if (timecode.indexOf('.')=='-1')
+	{ timecode = timecode + '.00' }
+	if (timecode.charAt(1) == '.')
+	{ timecode = '0' + timecode }
+	if (timecode.length == 4) {
+	timecode = timecode + '0' }
+	timecode = timecode.substring(0,2)
+	+ ':' + timecode.substring(3,5)
+
+	if (timestamp >= 0.06)
+	{
+		MM_showHideLayers('image','','show');
+	}
+	if (timecode == '00:38')
+	{
+		if(connected)
+		{
+			MM_showHideLayers('linkson','','show');
+			parent.window.external.OpenURLInPlayerBrowser("dcp://getmedia/getmedia.ini?firstrun");
+		}
+		else
+		{
+			MM_showHideLayers('linksoff','','show');
+		}
+	}
+}
+	 
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+-->
+</style>
+</head>
+
+<body topmargin="0" leftmargin="0" scroll="no" bgcolor="#000000">
+<span id="realimg"></span>
+<div id="image" style="position:absolute; width:200px; height:115px; z-index:1; visibility: hidden;"><img src="context.gif" width="325" height="170"></div>
+<div id="linkson" style="position:absolute; width:324px; height:115px; z-index:1; top: 104px; left: 106px; visibility: hidden;">
+<!--<span class="style1"><a target="_rpmusicstore" href="http://musicstore.firstrun.real.com"><font color="#FFFFFF" size="2">播放并购买音乐</font></a></span><BR>
+<a href="http://search.firstrun.real.com" target="_rpsearch" class="style1"><font color="#FFFFFF" size="2">搜索音频和视频</font></a><BR>
+<a href="http://radio.firstrun.real.com" target="_rpradio" class="style1"><font color="#FFFFFF" size="2">查找并播放电台节目 </font></a><BR>-->
+</div>
+<div id="linksoff" style="position:absolute; width:324px; height:115px; z-index:1; top: 104px; left: 106px; visibility: hidden;">
+<!--<span class="style1"><a target="_rpmusicstore" href="localguide.htm"><font color="#FFFFFF" size="2">播放并购买音乐</font></a></span><BR> 
+<a href="localguide.htm" target="_rpsearch" class="style1"><font color="#FFFFFF" size="2">搜索音频和视频</font></a><BR>
+<a href="localguide.htm" target="_rpradio" class="style1"><font color="#FFFFFF" size="2">查找并播放电台节目 </font></a><BR>-->
+</div>
+<BR>
+</body>
+</html>

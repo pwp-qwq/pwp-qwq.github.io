@@ -1,0 +1,27 @@
+<smil>
+   <head>
+      <meta name="Title" content="Welcome to RealPlayer!"/>
+      <meta name="Copyright" content = "(c) 1998, RealNetworks, Inc."/>
+
+      <layout>
+
+         <root-layout height="243" width="236" background-color="black"/>
+
+         <region id="region_01" left="0" top="0" height="207" width="236" fit="fill"/> 
+         <region id="region_02" left="0" top="207" height="36" width="236"/> 
+
+      </layout>
+   </head>
+
+   <body>
+      <par>
+         <animation id="anim" src="firstrun.swf" region="region_01" z-index="0" fill="remove"/>
+	 <animation id="link" src="firstrun.rt" region="region_02" fill="freeze"/>
+         <audio id="audio" src="firstrun.rm" fill="remove"/>
+	 <animation id="logo" src="firstrun.rp" region="region_01" z-index="1" begin="5.5s" fill="freeze"/>
+
+      </par>
+   </body>
+</smil>
+
+

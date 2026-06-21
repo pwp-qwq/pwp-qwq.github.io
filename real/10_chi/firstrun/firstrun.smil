@@ -1,0 +1,25 @@
+<smil xmlns="http://www.w3.org/2000/SMIL20/CR/Language"   
+	xmlns:rn="http://features.real.com/2001/SMIL20/Extensions">
+	<head>
+		<layout>
+			<root-layout width="450" height="170" background-color="#000000" rn:contextWindow="openAtStart" />
+			<region id="mediaWin" left="0" top="0" width="450" height="170" fit="fill" z-index="1" />
+		</layout>
+	</head>
+	<body>
+		<par>
+			<seq>
+				<par>
+					<audio src="audio.rm" id="talk" />
+					<animation src="media.swf" region="mediaWin" fill="freeze" >
+						<area href="context.htm" sourcePlaystate="play" actuate="onLoad" external="true" target="_rpcontextwin">
+							<rn:param name="width" value="325" />
+							<rn:param name="height" value="170" />
+						</area>
+						<area href="1.htm" sourcePlaystate="play" actuate="onLoad" external="true" target="_rphome" />
+					</animation>
+				</par>
+			</seq>
+		</par>
+	</body>
+</smil>

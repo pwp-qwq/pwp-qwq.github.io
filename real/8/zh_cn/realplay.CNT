@@ -1,0 +1,99 @@
+:Base realplay.HLP>(w95sec)
+:Title RealPlayer 8 Plus 帮助
+:Index AOL Instant Messenger=Aim.hlp
+:Link Aim.hlp
+1 RealPlayer 引言=Introduction>main
+1 如何使用此帮助文件=How_to_use_this_Help_File
+1 入门指南
+2 什么是 RealPlayer?
+3 RealPlayer 如何工作?=How_does_RealPlayer_work
+3 RealPlayer Plus 和 RealPlayer=Plus_versus_Free
+3 什么是信号流？=What_is_a_stream
+3 如何使用 RealPlayer=Using_the_RealPlayer_Plus
+3 SureStream=SureStream
+3 AutoUpdate(自动更新) 和安全性=AutoUpdate_and_Security
+3 缩放、面板和条形栏
+4 Windows 和附件=Windows_and_accessories
+4 更改 RealPlayer 窗口的大小=Changing_the_Size_of_the_RealPlayer_Plus_Window
+2 频道及收藏
+3 频道及收藏=Favorites_and_Channels
+3 频道
+4 频道标签=Channels
+4 自定义频道=Customizing_Channels
+4 更新标题新闻=Updating_Headlines
+3 收藏夹
+4 我的收藏夹标签=My_Favorites
+4 选择收藏=Selecting_a_Favorite
+4 添加收藏=Adding_Favorites
+4 创建收藏=Creating_a_Favorite
+4 编辑收藏=Edit_Favorite
+4 扫描收藏=Scanning_Your_Favorites
+4 共享收藏=Sharing_Favorites
+4 整理收藏=Organize_Favorites
+2 剪辑
+3 播放剪辑=Working_with_sound_and_video_clips
+3 加载剪辑=Loading_a_Clip
+3 录制音频=Recording_a_Clip
+3 保存当前位置=Save_Current_Place
+3 以 PerfectPlay(最佳播放)模式播放剪辑=PerfectPlay_Mode
+2 查找和扫描内容
+3 搜索=Real.com_Media_bar
+3 扫描收藏=Scanning_Your_Favorites
+3 扫描播放表=Scanning_Playlist
+1 RealPlayer 用户界面
+2 RealPlayer Plus 用户界面=RealPlayer_Plus_Interface>(w95sec)
+2 缩放 RealPlayer=Changing_the_Size_of_the_RealPlayer_Plus_Window
+2 RealPlayer 的所有组成部分
+3 面板、条形和附件=Windows_and_accessories
+3 控制栏=Working_with_sound_and_video_clips
+3 内容面板=Content_Panel
+3 显示面板=Display_Panel>howto
+3 位置栏=Location_bar
+3 Real.com 媒体栏=Real.com_Media_bar
+3 剪辑信息栏=Clip_Info_Bar
+3 播放表栏=Playlist_Bar
+3 均衡器面板=Equalizer_panel
+3 视觉呈示=Visualizations
+3 视觉呈示选项=Visualizations_Options
+3 视频控制=Color_controls
+3 状态栏=Status_Bar
+3 统计资料面板=Statistics_Pane
+3 Real.com 信使服务=messaging
+1 菜单
+2 RealPlayer 菜单=RealPlayer_Plus_Menus
+2 文件菜单=File_Menu
+2 播放菜单=Play_Menu
+2 视图菜单=View_Menu
+2 频道菜单=Channels_Menu
+2 收藏夹菜单=Favorites_menu
+2 帮助菜单=Help_Menu
+1 首选项
+2 设置首选项=Setting_Preferences
+2 常规首选项=General_Preferences
+2 显示首选项=Display_preferences
+2 内容首选项=Content_Preferences
+2 升级首选项=Upgrade_Preferences
+2 连接首选项=Connection_Preferences
+2 传输首选项=Transport_Preferences
+2 传输设置=Transport_Settings
+2 代理服务器首选项=Proxy_preferences
+2 性能首选项=Performance_Preferences
+2 支持首选项=Support_Preferences
+1 键盘快捷键
+2 键盘快捷键=Keyboard_Shortcuts
+1 疑难解答
+2 疑难解答=Troubleshooting
+2 剪辑不能在工作单位的计算机上播放=firewall
+2 音频播放质量不佳=sound_quality
+2 视频播放质量很差=video_quality
+2 视频发生扭曲或不显示=directx_video_issue
+2 全屏幕=full_screen
+2 启动计算机时停止加载 RealPlayer=loading_at_startup
+2 RealPlayer 使用错误的 Internet 提供商(ISP)？=wrong_ISP
+2 音量控制滑杆在何处？=Where_is_the_Volume_Control_slider_
+2 RealPlayer 能够播放的文件=file_types
+1 保密
+2 保密事宜与 RealNetworks=privacy
+1 词汇表
+2 词汇表=Glossary>(w95sec)
+:include aim.cnt

@@ -1,0 +1,32 @@
+<smil>
+
+<head>
+
+<meta name="Title" content="Welcome to RealPlayer 8"/>
+<meta name="Author" content="Roy Wilkie"/>
+<meta name="Copyright" content="2000, RealNetworks"/>
+
+<layout>
+<root-layout height="300" width="350" background-color="black"/>
+<region id="full_screen" left="0" top="0" height="300" width="350" z-index="1"/>
+
+
+</layout>
+
+</head>
+
+
+<body>
+<seq>
+
+        <par>
+                
+                <animation src="firstrun.swf" region="full_screen" fill="freeze" clip-end="20.4s"/>
+                <audio src="firstrun.rm" clip-end="20.4s"/>
+
+        </par>
+
+</seq>
+</body>
+
+</smil>

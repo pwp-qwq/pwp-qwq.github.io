@@ -1,0 +1,20 @@
+<imfl>
+    <head title="RealNetworks Logo"
+		copyright="(c)1998 RealNetworks, Inc."
+		timeformat="dd:hh:mm:ss.xyz"
+		duration="4.1"
+		bitrate="12000"
+		width="236"
+		height="207"
+		aspect="true"/>
+
+	<!-- Assign handle numbers to images -->
+	
+	<image handle="1" name="firstrun.gif"/>
+
+	<!-- Fade in large images -->
+
+	<fadein start="0" duration="1" target="1" dstx="30" dsty="45" dstw="176" dsth="100"/>
+
+
+</imfl>

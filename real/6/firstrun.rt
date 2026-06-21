@@ -1,0 +1,12 @@
+<window endtime="8.6" link="#B6E0FA" bgcolor="black" width="236" height="36" wordwrap="FALSE">
+<b><center>
+<pos x="0" y="6"/>
+<time begin="1" end = "6.4"/>
+<font size="4" color="#42B5EF" face="arial">Thanks from RealNetworks!</font>
+<time begin="6.5"/>
+<clear/>
+<font size="3" color="#42B5EF" face="arial">Connect to the Internet, and</font>
+<br/>
+<font size="3" COLOR="#42B5EF" face="arial"> <a href="http://ramhurl.real.com/g2install.html?file=first_run/first_run.smi" target="_player">click here</a> to see what's new.</font>
+</center></b>
+</window>
